@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="az">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="application-name" content="Airbnb" />
+    <link
+      rel="shortcut icon"
+      sizes="76x76"
+      type="image/x-icon"
+      href="https://a0.muscache.com/airbnb/static/logotype_favicon-21cc8e6c6a2cca43f061d2dcabdf6e58.ico"
+    />
+    <link rel="stylesheet" href="../css/newsroom.css" />
+    <title>Airbnb Newsroom</title>
+  </head>
+  <body>
+
+    <header>
+        <div class="header_content">
+          <div class="header_content_left">
+            <div class="header_content_left_logo_responsive">
+              <a href="#">
+                <svg width="30" height="32">
+                  <path
+                    d="M29.3864 22.7101C29.2429 22.3073 29.0752 21.9176 28.9157 21.5565C28.6701 21.0011 28.4129 20.4446 28.1641 19.9067L28.1444 19.864C25.9255 15.0589 23.5439 10.1881 21.0659 5.38701L20.9607 5.18316C20.7079 4.69289 20.4466 4.18596 20.1784 3.68786C19.8604 3.0575 19.4745 2.4636 19.0276 1.91668C18.5245 1.31651 17.8956 0.833822 17.1853 0.502654C16.475 0.171486 15.7005 -9.83959e-05 14.9165 4.23317e-08C14.1325 9.84805e-05 13.3581 0.171877 12.6478 0.503224C11.9376 0.834571 11.3088 1.31742 10.8059 1.91771C10.3595 2.46476 9.97383 3.05853 9.65572 3.68858C9.38521 4.19115 9.12145 4.70278 8.8664 5.19757L8.76872 5.38696C6.29061 10.1884 3.90903 15.0592 1.69015 19.8639L1.65782 19.9338C1.41334 20.463 1.16057 21.0102 0.919073 21.5563C0.75949 21.9171 0.592009 22.3065 0.448355 22.7103C0.0369063 23.8104 -0.094204 24.9953 0.0668098 26.1585C0.237562 27.334 0.713008 28.4447 1.44606 29.3804C2.17911 30.3161 3.14434 31.0444 4.24614 31.4932C5.07835 31.8299 5.96818 32.002 6.86616 32C7.14824 31.9999 7.43008 31.9835 7.71027 31.9509C8.846 31.8062 9.94136 31.4366 10.9321 30.8639C12.2317 30.1338 13.5152 29.0638 14.9173 27.5348C16.3194 29.0638 17.6029 30.1338 18.9025 30.8639C19.8932 31.4367 20.9886 31.8062 22.1243 31.9509C22.4045 31.9835 22.6864 31.9999 22.9685 32C23.8664 32.002 24.7561 31.8299 25.5883 31.4932C26.6901 31.0444 27.6554 30.3161 28.3885 29.3804C29.1216 28.4447 29.5971 27.3341 29.7679 26.1585C29.9287 24.9952 29.7976 23.8103 29.3864 22.7101ZM14.9173 24.377C13.1816 22.1769 12.0678 20.1338 11.677 18.421C11.5169 17.7792 11.4791 17.1131 11.5656 16.4573C11.6339 15.9766 11.8105 15.5176 12.0821 15.1148C12.4163 14.6814 12.8458 14.3304 13.3374 14.0889C13.829 13.8475 14.3696 13.7219 14.9175 13.7219C15.4655 13.722 16.006 13.8476 16.4976 14.0892C16.9892 14.3307 17.4186 14.6817 17.7528 15.1151C18.0244 15.5181 18.201 15.9771 18.2693 16.4579C18.3556 17.114 18.3177 17.7803 18.1573 18.4223C17.7661 20.1349 16.6526 22.1774 14.9173 24.377ZM27.7406 25.8689C27.6212 26.6908 27.2887 27.4674 26.7762 28.1216C26.2636 28.7759 25.5887 29.2852 24.8183 29.599C24.0393 29.9111 23.1939 30.0217 22.3607 29.9205C21.4946 29.8089 20.6599 29.5239 19.9069 29.0824C18.7501 28.4325 17.5791 27.4348 16.2614 25.9712C18.3591 23.3846 19.669 21.0005 20.154 18.877C20.3723 17.984 20.4196 17.0579 20.2935 16.1475C20.1791 15.3632 19.8879 14.615 19.4419 13.9593C18.9194 13.2519 18.2378 12.6768 17.452 12.2805C16.6661 11.8842 15.798 11.6777 14.9175 11.6777C14.0371 11.6777 13.1689 11.8841 12.383 12.2803C11.5971 12.6765 10.9155 13.2515 10.393 13.9589C9.94707 14.6144 9.65591 15.3624 9.5414 16.1465C9.41524 17.0566 9.4623 17.9822 9.68011 18.8749C10.1648 20.9993 11.4748 23.384 13.5732 25.9714C12.2555 27.4348 11.0845 28.4325 9.92769 29.0825C9.17468 29.5239 8.34007 29.809 7.47395 29.9205C6.64065 30.0217 5.79525 29.9111 5.0162 29.599C4.24581 29.2852 3.57092 28.7759 3.05838 28.1217C2.54585 27.4674 2.21345 26.6908 2.09411 25.8689C1.97932 25.0334 2.07701 24.1825 2.37818 23.3946C2.49266 23.0728 2.62663 22.757 2.7926 22.3818C3.0274 21.851 3.27657 21.3115 3.51759 20.7898L3.54996 20.7197C5.75643 15.9419 8.12481 11.0982 10.5894 6.32294L10.6875 6.13283C10.9384 5.64601 11.1979 5.14267 11.4597 4.6563C11.7101 4.15501 12.0132 3.68171 12.3639 3.2444C12.6746 2.86903 13.0646 2.56681 13.5059 2.35934C13.9473 2.15186 14.4291 2.04426 14.9169 2.04422C15.4047 2.04418 15.8866 2.15171 16.3279 2.35911C16.7693 2.56651 17.1593 2.86867 17.4701 3.24399C17.821 3.68097 18.1242 4.15411 18.3744 4.65538C18.6338 5.13742 18.891 5.63623 19.1398 6.11858L19.2452 6.32315C21.7097 11.0979 24.078 15.9415 26.2847 20.7201L26.3046 20.7631C26.5498 21.2936 26.8033 21.8419 27.042 22.382C27.2082 22.7577 27.3424 23.0738 27.4566 23.3944C27.7576 24.1824 27.8553 25.0333 27.7406 25.8689Z"
+                    fill="#ff385c"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+  
+            <div class="header_content_left_logo">
+              <a href="#">News</a>
+            </div>
+          </div>
+  
+          <div class="header_content_right">
+            <ul>
+                <li>
+                    <a href="#">About us</a>
+                </li>
+                <li>
+                    <a href="#">Media Assets</a>
+                </li>
+                <li>
+                    <a href="#">Product releases</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>               
+            </ul>
+
+            <div class="header_content_right_home_country">
+              <button>
+                <svg class="cntr"
+                  viewBox="0 0 16 16"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    display: block;
+                    height: 16px;
+                    width: 16px;
+                    fill: currentcolor;
+                  "
+                >
+                  <path
+                    d="m8.002.25a7.77 7.77 0 0 1 7.748 7.776 7.75 7.75 0 0 1 -7.521 7.72l-.246.004a7.75 7.75 0 0 1 -7.73-7.513l-.003-.245a7.75 7.75 0 0 1 7.752-7.742zm1.949 8.5h-3.903c.155 2.897 1.176 5.343 1.886 5.493l.068.007c.68-.002 1.72-2.365 1.932-5.23zm4.255 0h-2.752c-.091 1.96-.53 3.783-1.188 5.076a6.257 6.257 0 0 0 3.905-4.829zm-9.661 0h-2.75a6.257 6.257 0 0 0 3.934 5.075c-.615-1.208-1.036-2.875-1.162-4.686l-.022-.39zm1.188-6.576-.115.046a6.257 6.257 0 0 0 -3.823 5.03h2.75c.085-1.83.471-3.54 1.059-4.81zm2.262-.424c-.702.002-1.784 2.512-1.947 5.5h3.904c-.156-2.903-1.178-5.343-1.892-5.494l-.065-.007zm2.28.432.023.05c.643 1.288 1.069 3.084 1.157 5.018h2.748a6.275 6.275 0 0 0 -3.929-5.068z"
+                  ></path>
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M14 6.00008L8.35355 11.6465C8.15829 11.8418 7.84171 11.8418 7.64645 11.6465L2 6.00008" stroke="#222222" stroke-width="2"/>
+                </svg>
+              </button>
+            </div>
+
+            <form>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M6.5 12C9.53757 12 12 9.53757 12 6.5C12 3.46243 9.53757 1 6.5 1C3.46243 1 1 3.46243 1 6.5C1 9.53757 3.46243 12 6.5 12Z" stroke="#222222" stroke-width="2"/>
+                    <path d="M10.5 10.5L15 15" stroke="#222222" stroke-width="2"/>
+                </svg>
+                <button>Search</button>
+            </form>
+  
+          </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main_content">
+
+            <section class="panel">
+                <div class="panel_contact">
+                    <div class="panel_contact_left">
+                        <time>April 20, 2023</time>
+                        <h3>Airbnb-friendly apartments widely available in the US</h3>
+                        <button>Read more</button>
+                    </div>
+
+                    <div class="panel_contact_right">
+                        <img src="../assets/newshroom/panel_section photo.webp">
+                    </div>
+                </div>
+            </section>
+
+            <section class="news">
+                <div class="news_contact">
+                    <div class="news_contact_left">
+                        <h2>Latest news</h2>
+                        <div class="left_news_gallery">
+
+                            <div class="gallery_article">
+                                <div class="gallery_picture">
+                                    <img src="../assets/newshroom/news_1.webp">
+                                </div>
+                                <div class="gallery_autor">
+                                    <h3>Road to Paris 2024: Airbnb opens applications for the Athlete Travel Grant</h3>
+                                    <time>April 25, 2023</time>
+                                </div>
+                            </div>
+
+                            <div class="gallery_article">
+                                <div class="gallery_picture">
+                                    <img src="../assets/newshroom/news_2.webp">
+                                </div>
+                                <div class="gallery_autor">
+                                    <h3>The most wishlisted Earth Homes to stay in this Earth Month</h3>
+                                    <time>April 21, 2023</time>
+                                </div>
+                            </div>
+
+                            <div class="gallery_article">
+                                <div class="gallery_picture">
+                                    <img src="../assets/newshroom/news_3.webp">
+                                </div>
+                                <div class="gallery_autor">
+                                    <h3>Dream big on North Carolina’s northeast lakes and rivers this summer</h3>
+                                    <time>April 21, 2023</time>
+                                </div>
+                            </div>
+
+                            <div class="gallery_article">
+                                <div class="gallery_picture">
+                                    <img src="../assets/newshroom/news_4.webp">
+                                </div>
+                                <div class="gallery_autor">
+                                    <h3>Our Host community in Colorado</h3>
+                                    <time>April 20, 2023</time>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="news_contact_right">
+                        <div></div>
+
+                        <div>
+                        <h2>Follow us</h2>
+                        <p>Get the latest news and travel inspiration.</p>
+
+                        <div class="news_contact_right_sosial">
+                            <ul>
+                                <li>
+                                  <a
+                                    rel="noopener noreferrer"
+                                    target="_blank"
+                                    href="https://twitter.com/airbnb"
+                                  >
+                                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" clip-rule="evenodd" d="M27.125 5.565C26.11 5.99375 25.095 6.2825 24.0188 6.39625C25.1475 5.73125 25.9613 4.76 26.3988 3.43875C25.337 4.06063 24.1817 4.5068 22.9775 4.76C21.9013 3.64 20.5713 3.0625 19.0312 3.0625C16.0475 3.0625 13.6325 5.45125 13.6325 8.4175C13.6325 8.84625 13.6938 9.24875 13.7812 9.625C9.45875 9.42375 5.46 7.35 2.70375 4.0425C2.21375 4.87375 1.95125 5.76625 1.95125 6.74625C1.95125 8.5575 2.8525 10.1675 4.3575 11.1737C3.4825 11.1475 2.6775 10.9113 1.89 10.5087V10.57C1.89 13.0988 3.745 15.3125 6.2125 15.8025C5.66125 15.9512 5.1975 16.0038 4.795 16.0038C4.5325 16.0038 4.1825 15.9775 3.80625 15.89C4.14439 16.9595 4.81247 17.8946 5.71472 18.561C6.61698 19.2275 7.70707 19.5912 8.82875 19.6C6.88625 21.1225 4.64625 21.9013 2.12625 21.9013C1.63625 21.9013 1.19875 21.875 0.875 21.8138C3.36875 23.4237 6.125 24.2288 9.10875 24.2288C15.4875 24.2288 20.335 20.72 22.68 16.0912C23.87 13.7637 24.4475 11.4012 24.4475 9.0125V8.61C24.4213 8.46125 24.4212 8.3475 24.4212 8.32125C25.4777 7.56525 26.3928 6.62932 27.125 5.55625" fill="#222222"></path>
+                                  </svg>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    rel="noopener noreferrer"
+                                    target="_blank"
+                                    href="https://instagram.com/airbnb"
+                                  >
+                                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" clip-rule="evenodd" d="M26.9383 1.06167C26.2267 0.35 25.3867 0 24.4067 0H3.59333C2.60167 0 1.76167 0.35 1.06167 1.06167C0.361667 1.77333 0 2.61333 0 3.59333V24.4067C0 25.3983 0.35 26.2383 1.06167 26.9383C1.77333 27.6383 2.61333 28 3.59333 28H24.4067C25.3983 28 26.2383 27.65 26.9383 26.9383C27.6383 26.2267 28 25.3867 28 24.4067V3.59333C28 2.60167 27.65 1.76167 26.9383 1.06167ZM10.045 10.0917C11.1417 9.03 12.4717 8.49333 14.0117 8.49333C15.5633 8.49333 16.8933 9.03 17.99 10.0917C19.0867 11.1533 19.635 12.4367 19.635 13.9417C19.635 15.4467 19.0867 16.73 17.99 17.7917C16.8933 18.8533 15.5633 19.39 14.0117 19.39C12.4717 19.39 11.1417 18.8533 10.045 17.7917C8.94833 16.73 8.4 15.4467 8.4 13.9417C8.4 12.4367 8.94833 11.1533 10.045 10.0917ZM24.815 23.66C24.815 23.975 24.71 24.2433 24.4883 24.4533C24.387 24.558 24.2655 24.6409 24.1311 24.697C23.9967 24.7532 23.8523 24.7814 23.7067 24.78H4.22333C4.07584 24.7823 3.92941 24.7546 3.79301 24.6984C3.6566 24.6422 3.53308 24.5589 3.43 24.4533C3.32603 24.3497 3.24443 24.2258 3.19025 24.0893C3.13606 23.9529 3.11045 23.8067 3.115 23.66V11.8417H5.68167C5.43848 12.6155 5.31648 13.4222 5.32 14.2333C5.32 16.5667 6.17167 18.5617 7.875 20.2067C9.57833 21.8517 11.62 22.68 14.0233 22.68C15.5556 22.6924 17.0642 22.3021 18.3983 21.5483C19.7077 20.8227 20.8024 19.7642 21.5717 18.48C22.3439 17.2031 22.7477 15.7373 22.7383 14.245C22.7383 13.4167 22.61 12.6233 22.3767 11.8533H24.8383V23.66H24.815ZM24.815 7.385C24.815 7.735 24.6867 8.03833 24.4533 8.28333C24.336 8.4015 24.1959 8.49452 24.0414 8.5567C23.887 8.61889 23.7215 8.64893 23.555 8.645H20.3817C20.0317 8.645 19.7283 8.51667 19.4833 8.28333C19.3652 8.16603 19.2721 8.02588 19.21 7.87142C19.1478 7.71697 19.1177 7.55146 19.1217 7.385V4.375C19.1217 4.03667 19.25 3.745 19.4833 3.48833C19.7167 3.23167 20.0317 3.115 20.3817 3.115H23.555C23.905 3.115 24.2083 3.24333 24.4533 3.48833C24.6983 3.73333 24.815 4.03667 24.815 4.375V7.385Z" fill="#222222"></path>
+                                  </svg>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    rel="noopener noreferrer"
+                                    target="_blank"
+                                    href="https://linkedin.com/airbnb"
+                                  >
+                                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2.3391C0 1.04725 1.04653 0 2.3391 0H25.6609C26.9527 0 28 1.04653 28 2.3391V25.6609C28 26.9527 26.9535 28 25.6609 28H2.3391C1.04725 28 0 26.9535 0 25.6609V2.3391ZM11.0833 10.675H14.875V12.5802C15.4216 11.4847 16.8222 10.5 18.9263 10.5C22.9594 10.5 23.9167 12.6805 23.9167 16.6816V24.0917H19.8333V17.5928C19.8333 15.3143 19.2868 14.0292 17.8967 14.0292C15.9688 14.0292 15.1667 15.4146 15.1667 17.5928V24.0917H11.0833V10.675ZM4.08333 23.9167H8.16667V10.5H4.08333V23.9167ZM8.75 6.125C8.75 7.57458 7.57458 8.75 6.125 8.75C4.67542 8.75 3.5 7.57458 3.5 6.125C3.5 4.67542 4.67542 3.5 6.125 3.5C7.57458 3.5 8.75 4.67542 8.75 6.125Z" fill="#222222"></path>
+                                  </svg>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    rel="noopener noreferrer"
+                                    target="_blank"
+                                    href="https://facebook.com/airbnb"
+                                  >
+                                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" clip-rule="evenodd" d="M7 12.6087V8.96C7 8.5925 7.30625 8.25125 7.67375 8.25125H9.87875V6.43125C9.87875 2.19625 12.0487 0.035 16.3712 0C17.815 0 19.1887 0.18375 20.475 0.56C20.8775 0.6825 21.0262 0.9275 21 1.33L20.51 4.8825C20.475 5.04 20.3875 5.18875 20.23 5.34625C20.0462 5.4425 19.8625 5.50375 19.6787 5.46875C18.9087 5.25 18.1212 5.1625 17.2287 5.1625C16.0037 5.1625 15.82 5.4075 15.82 6.67625V8.25125H19.775C20.1425 8.25125 20.4837 8.61875 20.4837 9.02125L20.1775 12.67C20.1775 13.0375 19.8712 13.2912 19.5037 13.2912H15.82V27.2913C15.82 27.6588 15.5137 28 15.1462 28H10.5875C10.22 28 9.8875 27.6588 9.8875 27.2913V13.2912H7.6825C7.50149 13.2912 7.32789 13.2193 7.1999 13.0914C7.07191 12.9634 7 12.7898 7 12.6087Z" fill="#222222"></path>
+                                  </svg>
+                                  </a>
+                                </li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            
+            <section class="categories">
+                <div class="categories_content">
+                    <h2>Categories</h2>
+
+                    <div class="categories_content_list">
+                        <ul>
+                            <li>
+                              <a href="#">All</a>
+                            </li>
+                            <li>
+                              <a href="#">Company</a>
+                            </li>
+                            <li>
+                              <a href="#">Stays</a>
+                            </li>
+                            <li>
+                              <a href="#">Product</a>
+                            </li>
+                            <li>
+                              <a href="#">Policy</a>
+                            </li>
+                            <li>
+                              <a href="#">Community</a>
+                            </li>
+                            <li>
+                              <a href="#">Airbnb.org</a>
+                            </li>
+                         </ul>
+                    </div>
+
+                    <div class="categories_content_gallery">
+
+                        <div class="gallery_biggest">
+                            <div class="categories_content_gallery_pict">
+                                <img src="../assets/newshroom_category/1.webp">
+                            </div>
+                            <div class="categories_content_gallery_info">
+                                <h3>
+                                    <a>
+                                        Bobby Berk surprises new Host as her first guest and shares tips on hosting
+                                    </a>
+                                </h3>
+                                <time>April 5, 2023</time>
+                            </div>
+                        </div>
+
+                        <div class="gallery_biggest">
+                            <div class="categories_content_gallery_pict">
+                                <img src="../assets/newshroom_category/2.webp">
+                            </div>
+                            <div class="categories_content_gallery_info">
+                                <h3>
+                                    <a>Introducing our 2023 Airbnb Entrepreneurship Academy partners</a>
+                                </h3>
+                                <time>April 4, 2023</time>
+                            </div>
+                        </div>
+
+                        <div class="gallery_biggest">
+                            <div class="categories_content_gallery_pict">
+                                <img src="../assets/newshroom_category/3.webp">
+                            </div>
+                            <div class="categories_content_gallery_info">
+                                <h3>
+                                    <a>10 architectural gems that are bookable on Airbnb</a>
+                                </h3>
+                                <time>April 4, 2023</time>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="categories_content_gallery_pict">
+                                <img src="../assets/newshroom_category/4.webp">
+                            </div>
+                            <div class="categories_content_gallery_info">
+                                <h3>
+                                    <a>The 10 most wishlisted converted pubs to celebrate St. Patrick’s Day</a>
+                                </h3>
+                                <time>March 14, 2023</time>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="categories_content_gallery_pict">
+                                <img src="../assets/newshroom_category/5.webp">
+                            </div>
+                            <div class="categories_content_gallery_info">
+                                <h3>
+                                    <a>Live in the movies without a movie star budget</a>
+                                </h3>
+                                <time>March 9, 2023</time>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="categories_content_gallery_pict">
+                                <img src="../assets/newshroom_category/6.webp">
+                            </div>
+                            <div class="categories_content_gallery_info">
+                                <h3>
+                                    <a>Give Mae the evening off and spend the night at Ted Lasso’s favorite pub</a>
+                                </h3>
+                                <time>March 6, 2023</time>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="categories_content_gallery_pict">
+                                <img src="../assets/newshroom_category/7.webp">
+                            </div>
+                            <div class="categories_content_gallery_info">
+                                <h3>
+                                    <a>Airbnb welcomes progress on EU short-term rental rules</a>
+                                </h3>
+                                <time>March 1, 2023</time>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="categories_content_gallery_pict">
+                                <img src="../assets/newshroom_category/8.webp">
+                            </div>
+                            <div class="categories_content_gallery_info">
+                                <h3>
+                                    <a>Design on a dime: The top private rooms and Design listings under $100</a>
+                                </h3>
+                                <time>February 28, 2023</time>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="categories_content_gallery_pict">
+                                <img src="../assets/newshroom_category/9.webp">
+                            </div>
+                            <div class="categories_content_gallery_info">
+                                <h3>
+                                    <a>Families find value, more space when traveling on Airbnb</a>
+                                </h3>
+                                <time>February 27, 2023</time>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="categories_content_gallery_pict">
+                                <img src="../assets/newshroom_category/10.webp">
+                            </div>
+                            <div class="categories_content_gallery_info">
+                                <h3>
+                                    <a>Blooming this spring: Duo travel, city breaks, and relaxing poolside</a>
+                                </h3>
+                                <time>February 22, 2023</time>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="categories_content_gallery_pict">
+                                <img src="../assets/newshroom_category/11.webp">
+                            </div>
+                            <div class="categories_content_gallery_info">
+                                <h3>
+                                    <a>One year later: Airbnb.org’s support for people fleeing the war in Ukraine</a>
+                                </h3>
+                                <time>February 22, 2023</time>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button>More</button>
+                </div>
+            </section>
+
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer_content">
+          <div class="footer_content_form">
+            <div class="footer_content_detailes">
+                <section>
+                <div>
+                    <h3>Support</h3>
+                </div>
+                <ul>
+                    <li>
+                    <a href="#">Help Center</a>
+                    </li>
+                    <li>
+                    <a href="#">AirCover</a>
+                    </li>
+                    <li>
+                    <a href="#">Safety information</a>
+                    </li>
+                    <li>
+                    <a href="#">Cancellation options</a>
+                    </li>
+                    <li>
+                    <a href="#">Our COVID-19 Response</a>
+                    </li>
+                    <li>
+                    <a href="#">Supporting people with disabilities</a>
+                    </li>
+                    <li>
+                        <a href="#">Report a neighborhood concern</a>
+                    </li>
+                </ul>
+                </section>
+    
+                <section>
+                <div>
+                    <h3>COMMUNITY</h3>
+                </div>
+                <ul>
+                    <li>
+                    <a href="#">Airbnb.org: disaster relief housing</a>
+                    </li>
+                    <li>
+                    <a href="#">Support Afghan refugees</a>
+                    </li>
+                    <li>
+                        <a href="#">Combating discrimination</a>
+                    </li>
+                </ul>
+                </section>
+    
+                <section>
+                <div>
+                    <h3>HOSTING</h3>
+                </div>
+                <ul>
+                    <li>
+                    <a href="#">Try hosting</a>
+                    </li>
+                    <li>
+                    <a href="#">AirCover for Hosts</a>
+                    </li>
+                    <li>
+                    <a href="#">Explore hosting resources</a>
+                    </li>
+                    <li>
+                    <a href="#">Visit our community forum</a>
+                    </li>
+                    <li>
+                    <a href="#">How to host responsibly</a>
+                    </li>
+                </ul>
+                </section>
+    
+                <section>
+                <div>
+                    <h3>ABOUT</h3>
+                </div>
+                <ul>
+                    <li>
+                    <a href="#">Newsroom</a>
+                    </li>
+                    <li>
+                    <a href="#">Learn about new features</a>
+                    </li>
+                    <li>
+                    <a href="#">Letter from our founders</a>
+                    </li>
+                    <li>
+                    <a href="#">Careers</a>
+                    </li>
+                    <li>
+                    <a href="#">Investors</a>
+                    </li>
+                </ul>
+                </section>
+            </div>
+
+            <div class="footer_content_about">
+                <h3>DISCLAIMER</h3>
+                <p>The Airbnb Newsroom is aimed at journalists. All Homes and Experiences referenced on the Airbnb Newsroom are intended purely to inspire and illustrate. Airbnb does not recommend or endorse specific Home or Experience listings on the Airbnb platform.</p>
+            </div>
+          </div>
+  
+          <div class="footer_end_content">
+            <div class="footer_end_content_left">
+              <div>
+                <span>© 2023 Airbnb, Inc. All rights reserved</span>
+                <span>·</span>
+              </div>
+  
+              <div>
+                <ol>
+                  <li>
+                    <a href="#">Privacy</a>
+                    <span>·</span>
+                  </li>
+                  <li>
+                    <a href="#">Terms</a>
+                    <span>·</span>
+                  </li>
+                  <li>
+                    <a href="#">Sitemap</a>
+                  </li>
+                </ol>
+              </div>
+            </div>
+  
+            <div class="footer_end_content_right">  
+              <div>
+                <ul>
+                  <li>
+                    <a
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      href="https://twitter.com/airbnb"
+                    >
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M27.125 5.565C26.11 5.99375 25.095 6.2825 24.0188 6.39625C25.1475 5.73125 25.9613 4.76 26.3988 3.43875C25.337 4.06063 24.1817 4.5068 22.9775 4.76C21.9013 3.64 20.5713 3.0625 19.0312 3.0625C16.0475 3.0625 13.6325 5.45125 13.6325 8.4175C13.6325 8.84625 13.6938 9.24875 13.7812 9.625C9.45875 9.42375 5.46 7.35 2.70375 4.0425C2.21375 4.87375 1.95125 5.76625 1.95125 6.74625C1.95125 8.5575 2.8525 10.1675 4.3575 11.1737C3.4825 11.1475 2.6775 10.9113 1.89 10.5087V10.57C1.89 13.0988 3.745 15.3125 6.2125 15.8025C5.66125 15.9512 5.1975 16.0038 4.795 16.0038C4.5325 16.0038 4.1825 15.9775 3.80625 15.89C4.14439 16.9595 4.81247 17.8946 5.71472 18.561C6.61698 19.2275 7.70707 19.5912 8.82875 19.6C6.88625 21.1225 4.64625 21.9013 2.12625 21.9013C1.63625 21.9013 1.19875 21.875 0.875 21.8138C3.36875 23.4237 6.125 24.2288 9.10875 24.2288C15.4875 24.2288 20.335 20.72 22.68 16.0912C23.87 13.7637 24.4475 11.4012 24.4475 9.0125V8.61C24.4213 8.46125 24.4212 8.3475 24.4212 8.32125C25.4777 7.56525 26.3928 6.62932 27.125 5.55625" fill="#222222"></path>
+                    </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      href="https://instagram.com/airbnb"
+                    >
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M26.9383 1.06167C26.2267 0.35 25.3867 0 24.4067 0H3.59333C2.60167 0 1.76167 0.35 1.06167 1.06167C0.361667 1.77333 0 2.61333 0 3.59333V24.4067C0 25.3983 0.35 26.2383 1.06167 26.9383C1.77333 27.6383 2.61333 28 3.59333 28H24.4067C25.3983 28 26.2383 27.65 26.9383 26.9383C27.6383 26.2267 28 25.3867 28 24.4067V3.59333C28 2.60167 27.65 1.76167 26.9383 1.06167ZM10.045 10.0917C11.1417 9.03 12.4717 8.49333 14.0117 8.49333C15.5633 8.49333 16.8933 9.03 17.99 10.0917C19.0867 11.1533 19.635 12.4367 19.635 13.9417C19.635 15.4467 19.0867 16.73 17.99 17.7917C16.8933 18.8533 15.5633 19.39 14.0117 19.39C12.4717 19.39 11.1417 18.8533 10.045 17.7917C8.94833 16.73 8.4 15.4467 8.4 13.9417C8.4 12.4367 8.94833 11.1533 10.045 10.0917ZM24.815 23.66C24.815 23.975 24.71 24.2433 24.4883 24.4533C24.387 24.558 24.2655 24.6409 24.1311 24.697C23.9967 24.7532 23.8523 24.7814 23.7067 24.78H4.22333C4.07584 24.7823 3.92941 24.7546 3.79301 24.6984C3.6566 24.6422 3.53308 24.5589 3.43 24.4533C3.32603 24.3497 3.24443 24.2258 3.19025 24.0893C3.13606 23.9529 3.11045 23.8067 3.115 23.66V11.8417H5.68167C5.43848 12.6155 5.31648 13.4222 5.32 14.2333C5.32 16.5667 6.17167 18.5617 7.875 20.2067C9.57833 21.8517 11.62 22.68 14.0233 22.68C15.5556 22.6924 17.0642 22.3021 18.3983 21.5483C19.7077 20.8227 20.8024 19.7642 21.5717 18.48C22.3439 17.2031 22.7477 15.7373 22.7383 14.245C22.7383 13.4167 22.61 12.6233 22.3767 11.8533H24.8383V23.66H24.815ZM24.815 7.385C24.815 7.735 24.6867 8.03833 24.4533 8.28333C24.336 8.4015 24.1959 8.49452 24.0414 8.5567C23.887 8.61889 23.7215 8.64893 23.555 8.645H20.3817C20.0317 8.645 19.7283 8.51667 19.4833 8.28333C19.3652 8.16603 19.2721 8.02588 19.21 7.87142C19.1478 7.71697 19.1177 7.55146 19.1217 7.385V4.375C19.1217 4.03667 19.25 3.745 19.4833 3.48833C19.7167 3.23167 20.0317 3.115 20.3817 3.115H23.555C23.905 3.115 24.2083 3.24333 24.4533 3.48833C24.6983 3.73333 24.815 4.03667 24.815 4.375V7.385Z" fill="#222222"></path>
+                    </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      href="https://linkedin.com/airbnb"
+                    >
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2.3391C0 1.04725 1.04653 0 2.3391 0H25.6609C26.9527 0 28 1.04653 28 2.3391V25.6609C28 26.9527 26.9535 28 25.6609 28H2.3391C1.04725 28 0 26.9535 0 25.6609V2.3391ZM11.0833 10.675H14.875V12.5802C15.4216 11.4847 16.8222 10.5 18.9263 10.5C22.9594 10.5 23.9167 12.6805 23.9167 16.6816V24.0917H19.8333V17.5928C19.8333 15.3143 19.2868 14.0292 17.8967 14.0292C15.9688 14.0292 15.1667 15.4146 15.1667 17.5928V24.0917H11.0833V10.675ZM4.08333 23.9167H8.16667V10.5H4.08333V23.9167ZM8.75 6.125C8.75 7.57458 7.57458 8.75 6.125 8.75C4.67542 8.75 3.5 7.57458 3.5 6.125C3.5 4.67542 4.67542 3.5 6.125 3.5C7.57458 3.5 8.75 4.67542 8.75 6.125Z" fill="#222222"></path>
+                    </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      href="https://facebook.com/airbnb"
+                    >
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 12.6087V8.96C7 8.5925 7.30625 8.25125 7.67375 8.25125H9.87875V6.43125C9.87875 2.19625 12.0487 0.035 16.3712 0C17.815 0 19.1887 0.18375 20.475 0.56C20.8775 0.6825 21.0262 0.9275 21 1.33L20.51 4.8825C20.475 5.04 20.3875 5.18875 20.23 5.34625C20.0462 5.4425 19.8625 5.50375 19.6787 5.46875C18.9087 5.25 18.1212 5.1625 17.2287 5.1625C16.0037 5.1625 15.82 5.4075 15.82 6.67625V8.25125H19.775C20.1425 8.25125 20.4837 8.61875 20.4837 9.02125L20.1775 12.67C20.1775 13.0375 19.8712 13.2912 19.5037 13.2912H15.82V27.2913C15.82 27.6588 15.5137 28 15.1462 28H10.5875C10.22 28 9.8875 27.6588 9.8875 27.2913V13.2912H7.6825C7.50149 13.2912 7.32789 13.2193 7.1999 13.0914C7.07191 12.9634 7 12.7898 7 12.6087Z" fill="#222222"></path>
+                    </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+  </body>
+  </html>
