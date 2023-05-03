@@ -10,11 +10,9 @@
     margin: 0;
 }
 
-
 ul, ol{
     list-style-type: none;
 }
-
 
 a{
     text-decoration-line: none;
@@ -28,10 +26,11 @@ a{
 }
 
 
-/* OTHER PAGE WITH JAVASCRIPT */
+/* ==============================OTHER PAGE WITH JAVASCRIPT START */
 
 /* DETAIL */
 .detail_content{
+    display: none;
     background: #FFFFFF;
     overflow: clip;
     position: relative;
@@ -83,6 +82,28 @@ a{
     font-weight: 300;
 }
 
+/* LOGIN SECTION THERE */
+
+.login{
+    display: none;
+    width: 20%;
+}
+
+.login_content li{
+    padding-left: 24px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+
+.login_content hr{
+    font-weight: 100;
+    border-top: 1px solid gainsboro;
+}
+
+
+
+
+/* ==============================OTHER PAGE WITH JAVASCRIPT FINISH */
 
 /* HEADER START THERE */
 
@@ -122,10 +143,10 @@ header{
     align-items: center;
     display: inline-flex;
     max-width: 100%;
+    transition: 0.2s;
 }
 
 .header_content_medium_content:hover{
-    /* transition: box-shadow 0.2s ease; */
     transition: transform 250ms ease, opacity 100ms ease,visibility 0ms 50ms;
     transform: scale(1,1) translateY(0);
     cursor: pointer;
@@ -190,13 +211,18 @@ header{
     cursor: pointer;
 }
 
-.header_content_right_home_login button{
+.login_button{
     background: transparent;
     cursor: pointer;
     margin: 0;
     border: 1px solid #DDDDDD;
     border-radius: 21px;
     padding: 5px 5px 5px 12px;
+    transition: 0.2s;
+}
+
+.login_button:hover{
+    box-shadow: 0 1px 2px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.05);
 }
 
 .header_content_right_home_user{
