@@ -35,12 +35,12 @@
                 <div class="navigator_content">
                     <div class="navigator_content_left">
                         <h1><span>Evinizi Airbnb'ə Köçürün</span><br>Təxmini Qazancınız.</h1>
-                        <div>$<span>300</span></div>
+                        <div class="amount">$ 300</div>
                         <p><span>7 gecə </span>(təxmini olaraq gecəlik $44 üzərindən)</p>
                         <div class="input">
                             <input min="1" max="30" type="range">
                         </div>
-                        <a href="#">Təxminən qazanclarınızın necə hesablandığını öyrənin</a>
+                        <a class="amount_a" href="#">Təxminən qazanclarınızın necə hesablandığını öyrənin</a>
                         <div class="navigator_content_search">
                             <div>
                                 <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: rgb(255, 56, 92); stroke-width: 4; overflow: visible;"><g fill="none"><path d="m13 24c6.0751322 0 11-4.9248678 11-11 0-6.07513225-4.9248678-11-11-11-6.07513225 0-11 4.92486775-11 11 0 6.0751322 4.92486775 11 11 11zm8-3 9 9"></path></g>
@@ -48,8 +48,8 @@
                             </div>
 
                             <div>
-                                <p>Bakı</p>
-                                <p>Yerin hamısı - 4 qonaq</p>
+                                <h6>Bakı</h6>
+                                <span>Yerin hamısı - 4 qonaq</span>
                             </div>
                         </div>
                         <button>
@@ -70,36 +70,44 @@
             </section>
 
             <section class="start">
-                <div class="image_content">
-                    <h1>Airbnb Start ilə evinizi rahat bir şəkildə Airbnb'ə köçürün</h1>
-                    <div class="image_content_pic">
-                        <img src="../assets/airbnbhome/image_sec.webp">
+                <div class="start_content">
+                    <div class="image_content">
+                        <h2>Airbnb Start ilə evinizi rahat bir şəkildə Airbnb'ə köçürün</h2>
+                        <div class="image_content_pic">
+                            <img src="../assets/airbnbhome/image_sec.webp">
+                        </div>
                     </div>
+    
+                    <article class="image_article">
+                        <div>
+                            <h3>Super Ev Sahiblərindən birə bir rəhbərlik</h3>
+                            <p>Sizi bölgənizdəki Super Bir Ev Sahibi ilə uyğunlaşdıracağıq. Bu insan, ilk sualınızdan ilk qonağınıza qədər telefonla, görüntülü zəng və ya söhbət yolu ilə sizə rəhbərlik edəcək.</p>
+                        </div>
+    
+                        <div>
+                            <h3>İlk rezervasiyanız üçün təcrübəli bir qonaq</h3>
+                            <p>İlk rezervasiyanız üçün Airbnb'də ən az 3 qonaqlaması və yaxşı bir keçmişi olan təcrübəli bir qonağı qəbul etməyi seçə bilərsiniz.</p>
+                        </div>
+    
+                        <div>
+                            <h3>Airbnb'dən özəl support</h3>
+                            <p>Yeni ev sahibləri, hesabla bağlı problemlərdən fakturalandırma dəstəyinə qədər hər mövzuda sizə kömək edə biləcək, özəl olaraq təlim almış Cəmiyyət Dəstəyi təmsilçiləri ilə tək toxunuşla əlaqəyə keçə biləcək.</p>
+                        </div>
+                    </article>
+    
+                    <article class="image_page_button">
+                        <div>
+                            <p>Başlamaya Hazırsınız?</p>
+    
+                            <button>
+                                <div class="button_div">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.0639 7.63177V11.1393H7.51713V13.028H11.0639V16.5356H13.0048V13.028H16.5516V11.1393H13.0048V7.63177H11.0639Z" fill="white"></path><path d="M13.734 0.684168C13.2611 0.240904 12.6404 0 12 0C11.3596 0 10.7389 0.240904 10.266 0.674532L0 10.7251L1.36946 12.0549L2.10837 11.3321V19.9661C2.10837 20.4094 2.29557 20.8334 2.61084 21.1418C2.92611 21.4501 3.35961 21.6332 3.81281 21.6332H20.1773C20.6305 21.6332 21.064 21.4598 21.3892 21.1418C21.7143 20.8238 21.8916 20.3998 21.8916 19.9565V11.3032L22.6305 12.0259L24 10.7251L13.734 0.684168ZM4.03941 19.7542V9.4049L11.6355 1.97542C11.6847 1.92723 11.734 1.88869 11.803 1.86942C11.8621 1.84051 11.931 1.83087 12 1.83087H12.0099C12.0788 1.83087 12.1478 1.84051 12.2069 1.86942C12.266 1.89833 12.3251 1.92723 12.3744 1.97542L19.9704 9.4049V19.7542H4.03941Z" fill="white"></path></svg>
+                                    <span>Airbnb Start</span>
+                                </div>
+                            </button>
+                        </div>
+                    </article>
                 </div>
-
-                <article>
-                    <div>
-                        <h3>Super Ev Sahiblərindən birə bir rəhbərlik</h3>
-                        <div>Sizi bölgənizdəki Super Bir Ev Sahibi ilə uyğunlaşdıracağıq. Bu insan, ilk sualınızdan ilk qonağınıza qədər telefonla, görüntülü zəng və ya söhbət yolu ilə sizə rəhbərlik edəcək.</div>
-                    </div>
-
-                    <div>
-                        <h3>İlk rezervasiyanız üçün təcrübəli bir qonaq</h3>
-                        <div>İlk rezervasiyanız üçün Airbnb'də ən az 3 qonaqlaması və yaxşı bir keçmişi olan təcrübəli bir qonağı qəbul etməyi seçə bilərsiniz.</div>
-                    </div>
-
-                    <div>
-                        <h3>Airbnb'dən özəl support</h3>
-                        <div>Yeni ev sahibləri, hesabla bağlı problemlərdən fakturalandırma dəstəyinə qədər hər mövzuda sizə kömək edə biləcək, özəl olaraq təlim almış Cəmiyyət Dəstəyi təmsilçiləri ilə tək toxunuşla əlaqəyə keçə biləcək.</div>
-                    </div>
-                </article>
-
-                <div>Başlamaya Hazırsınız?</div>
-
-                <button>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.0639 7.63177V11.1393H7.51713V13.028H11.0639V16.5356H13.0048V13.028H16.5516V11.1393H13.0048V7.63177H11.0639Z" fill="white"></path><path d="M13.734 0.684168C13.2611 0.240904 12.6404 0 12 0C11.3596 0 10.7389 0.240904 10.266 0.674532L0 10.7251L1.36946 12.0549L2.10837 11.3321V19.9661C2.10837 20.4094 2.29557 20.8334 2.61084 21.1418C2.92611 21.4501 3.35961 21.6332 3.81281 21.6332H20.1773C20.6305 21.6332 21.064 21.4598 21.3892 21.1418C21.7143 20.8238 21.8916 20.3998 21.8916 19.9565V11.3032L22.6305 12.0259L24 10.7251L13.734 0.684168ZM4.03941 19.7542V9.4049L11.6355 1.97542C11.6847 1.92723 11.734 1.88869 11.803 1.86942C11.8621 1.84051 11.931 1.83087 12 1.83087H12.0099C12.0788 1.83087 12.1478 1.84051 12.2069 1.86942C12.266 1.89833 12.3251 1.92723 12.3744 1.97542L19.9704 9.4049V19.7542H4.03941Z" fill="white"></path></svg>
-                    <span>Airbnb Start</span>
-                </button>
             </section>
 
             <section class="aircover">
@@ -285,10 +293,66 @@
                                 </tr>
                             </tbody>
                         </table>
-
                         <p>Qarşılaşdırma, 22 Oktyabrdan etibarən hər kəsə açıq məlumatlara və böyük rəqiblərin təqdim etdiyi ödənişsiz təkliflərə dayanır. Əlavələri və istisnaları <a href="#">burada</a> tapa bilərsiniz.</p>
                     </div>
-                    <a href="#">Daha çox məlumat əldə edin</a>
+                    <div class="aircover_content_more">
+                        <a href="#">Daha çox məlumat əldə edin</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="chat">
+                <div class="chat_content">
+                    <div class="chat_content_left">
+                        <img src="../assets/airbnbhome/chat_sec.webp">
+                    </div>
+
+                    <div class="chat_content_right">
+                        <h2>Yaxınınızdaki bir Super Ev Sahibinin köməyi ilə evinizi Airbnb'yə köçürün.</h2>
+                        <div>
+                            <a href="#">Bir Super Ev Sahibiylə söhbət edin</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="fag">
+                <div class="fag_content">
+                    <div class="fag_content_left">
+                        <h2>Suallarınız cavablandırıldı</h2>
+                    </div>
+
+                    <div class="fag_content_right">
+                        <div class="fag_content_right_list">
+                            <div></div>
+                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;"><g fill="none"><path d="m28 12-11.2928932 11.2928932c-.3905243.3905243-1.0236893.3905243-1.4142136 0l-11.2928932-11.2928932"></path></g></svg>
+                        </div>
+                        <hr>
+
+                        <div class="fag_content_right_list">
+                            <div></div>
+                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;"><g fill="none"><path d="m28 12-11.2928932 11.2928932c-.3905243.3905243-1.0236893.3905243-1.4142136 0l-11.2928932-11.2928932"></path></g></svg>
+                        </div>
+                        <hr>
+
+                        <div class="fag_content_right_list">
+                            <div></div>
+                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;"><g fill="none"><path d="m28 12-11.2928932 11.2928932c-.3905243.3905243-1.0236893.3905243-1.4142136 0l-11.2928932-11.2928932"></path></g></svg>
+                        </div>
+                        <hr>
+
+                        <div class="fag_content_right_list">
+                            <div></div>
+                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;"><g fill="none"><path d="m28 12-11.2928932 11.2928932c-.3905243.3905243-1.0236893.3905243-1.4142136 0l-11.2928932-11.2928932"></path></g></svg>
+                        </div>
+                        <hr>
+
+                        <div class="fag_content_right_list">
+                            <div></div>
+                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;"><g fill="none"><path d="m28 12-11.2928932 11.2928932c-.3905243.3905243-1.0236893.3905243-1.4142136 0l-11.2928932-11.2928932"></path></g></svg>
+                        </div>
+        
+                    </div>
                 </div>
             </section>
         </div>
