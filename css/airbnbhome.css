@@ -449,6 +449,54 @@ tbody tr td div{
 
 /* MAIN FAG SECTION */
 
+.fag{
+    padding-top: 48px;
+    background-color: #F7F7F7;
+    padding-bottom: 48px;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.fag_content{
+    padding-left: 80px;
+    padding-right: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.fag_content_left h2{
+    margin-top: 32px;
+    margin-bottom: 48px;
+    font-size: 40px;
+    line-height: 44px;
+}
+
+.fag_content_right_list{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fag_content_right_list div{
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 300;
+    margin-right: 24px;
+}
+
+.fag_content_right_list svg{
+    margin-left: 16px;
+}
+
+.fag_content_right hr{
+    display: block;
+    border: 0;
+    border-top: 1px solid #DDDDDD;
+    margin-top: 24px;
+}
+
 
 /* FOOTER */
 
