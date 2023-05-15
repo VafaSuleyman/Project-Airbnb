@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&family=Open+Sans:wght@500&family=Roboto+Slab:wght@200;400&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&family=Sen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&family=Open+Sans:wght@500&family=Roboto+Slab:wght@200;400&family=Roboto:ital,wght@0,300;0,400;0,700;1,300&family=Sen&display=swap');
+
+
+*{
+    font-family: Circular, Roboto, Helvetica Neue, sans-serif;
+    box-sizing: border-box;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+ul, ol{
+    list-style-type: none;
+}
+
+a{
+    text-decoration-line: none;
+    color: black;
+}
+
+/* RESPONSIV */
+
+.header_content_left_logo_responsive{
+    display: none;
+}
+
+
+/* HEADER START THERE */
+
+header{
+    box-shadow: rgb(0 0 0 / 8%) 0 1px 0;
+    position: sticky;
+    background-color: white;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 10;
+}
+
+.header_content_left{
+    width: 30%;
+}
+
+.header_content{
+    padding-left: 200px;
+    padding-right: 215px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.header_content_medium{
+    width: 25%;
+}
+
+.header_content_medium_content{
+    box-shadow: 0 1px 2px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.05);
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 40px;
+    padding: 8px;
+    align-items: center;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    transition: 0.2s;
+}
+
+.header_content_medium_content:hover{
+    transition: transform 250ms ease, opacity 100ms ease,visibility 0ms 50ms;
+    transform: scale(1,1) translateY(0);
+    scale: 1;
+    cursor: pointer;
+}
+
+.header_content_medium_content button{
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.button{
+    padding: 0 10px;
+}
+
+.search_icon{
+    background-color: #ff385c;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.header_content_medium_content span{
+    background-color: #DDDDDD;
+    flex: 0 0 1px;
+    height: 24px;
+    width: 1px;
+}
+
+.header_content_right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 26%;
+}
+
+
+.header_content_right button{
+    display: flex;
+    align-items: center;
+}
+
+.header_content_right_home a{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.header_content_right_home_country button{
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.login_button{
+    background: transparent;
+    cursor: pointer;
+    margin: 0;
+    border: 1px solid #DDDDDD;
+    border-radius: 21px;
+    padding: 5px 5px 5px 12px;
+    transition: 0.2s;
+}
+
+.login_button:hover{
+    box-shadow: 0 1px 2px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.header_content_right_home_user{
+    flex: 0 0 30px;
+    height: 30px;
+    width: 30px;
+    margin-left: 12px;
+}
+
+/* MAIN HOTEL SECTION CSS THERE*/
+
+.hotel_content{
+    padding-left: 200px;
+    padding-right: 215px;
+}
+
+.hotel_content_info{
+    padding-top: 24px;
+}
+
+.hotel_content_info_name{
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.hotel_content_info_name svg{
+    margin-right: 12px;
+}
+
+.hotel_content_info_name h1{
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.hotel_content_info_other,
+.hotel_content_info_other_right,
+.hotel_content_info_other_right button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hotel_content_info_other_left{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.hotel_content_info_other_left button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.status{
+    font-weight: 400;
+}
+
+.hotel_content_info_other_right button{
+    transition: box-shadow 0.2s ease,transform 0.1s ease;
+    border: none;
+    background: transparent;
+    padding: 8px;
+}
+
+.hotel_content_info_other_right button span{
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 8px;
+    font-weight: 500;
+}
+
+.hotel_content_picture{
+    margin-top: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hotel_content_picture_left{
+    width: 49%;
+}
+
+.hotel_content_picture img{
+    width: 100%;
+}
+
+.hotel_content_picture_right{
+    width: 49%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hotel_content_picture_right div{
+    width: 24.9%;
+}
+
+/* MAIN HOMEINFO CSS THERE */
+
+.homeInfo_content{
+    padding: 48px 215px 48px 200px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+}
+
+.homeInfo_content_right{
+    padding-top: 48px;
+    width: 33%;
+    position: sticky;
+    bottom: 0;
+    right: 0;
+}
+
+.homeInfo_content_right_reserve{
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
+}
+
+.homeInfo_content_right_reserve_info{
+    margin-top: 24px;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.homeInfo_content_right_reserve_info p{
+    font-weight: 300;
+    margin-right: 8px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.homeInfo_content_right_reserve_info p span{
+    font-weight: 500;
+}
+
+.right_reserve{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.left span:nth-child(1){
+    color: rgb(113, 113, 113);
+    text-decoration: line-through;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.left span:nth-child(2){
+    color: black;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.left span:nth-child(3){
+    color: black;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.right span{
+    color: rgb(34, 34, 34);
+    padding-left: 4px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.right a{
+    text-decoration: underline;
+    color: rgb(113, 113, 113);
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.homeInfo_content_right_reserve button{
+    margin-top: 16px;
+    width: 100%;
+    opacity: 1;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 8px;
+    padding: 12px 24px;
+    border: none;
+    color: white;
+    background: linear-gradient(to right,#E61E4D 0%,#E31C5F 50%,#D70466 100%);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.homeInfo_content_right_reserve p{
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 350;
+    text-align: center;
+}
+
+/* FOOTER */
+
+footer{
+    padding: 14px 200px 14px 215px;
+    background-color: #F7F7F7;
+}
+
+.footer_content{
+    overflow: clip;
+    height: fit-content;
+    max-height: 80vh;
+    width: 100%;
+    padding-right: 17px;
+}
+
+.footer_content_detailes{
+    width: 100%;
+    display: flex;
+    margin-top: 25px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.footer_content_detailes section {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 24.8%;
+    margin-right: 70px;
+}
+
+.footer_content_detailes section div{
+    margin-left: 5px;
+    margin-bottom: 24px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.footer_content_detailes li{
+    margin-top: 16px;
+    font-weight: 300;
+}
+
+.footer_end_content,
+.footer_end_content_left,
+.footer_end_content_left ol,
+.footer_end_content_right,
+.footer_end_content_right ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_end_content{
+    padding: 25px 0;
+}
+
+.footer_end_content span, button, li{
+    color: #222222;
+    font-size: 14px;
+    line-height: 18px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.footer_end_content_right button{
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: #F7F7F7;
+    font-weight: 500;
+}

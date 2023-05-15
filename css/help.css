@@ -377,14 +377,12 @@ header{
     font-weight: 500;
 }
 
-
 /* FOOTER */
 
 footer{
     padding: 14px 80px;
     background-color: #F7F7F7;
 }
-
 
 .footer_content{
     overflow: clip;
@@ -393,7 +391,6 @@ footer{
     width: 100%;
     padding-right: 17px;
 }
-
 
 .footer_content_detailes{
     width: 100%;
