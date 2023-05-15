@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&family=Open+Sans:wght@500&family=Roboto+Slab:wght@200;400&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&family=Sen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&family=Open+Sans:wght@500&family=Roboto+Slab:wght@200;400&family=Roboto:ital,wght@0,300;0,400;0,700;1,300&family=Sen&display=swap');
+
+
+*{
+    font-family: Circular, Roboto, Helvetica Neue, sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+ul, ol{
+    list-style-type: none;
+}
+
+a{
+    text-decoration-line: none;
+    color: black;
+}
+
+/* HEADER CSS CODE THERE */
+
+header{
+    position: sticky;
+    background-color: white;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 10;
+}
+
+.header_content_left{
+    width: 24%;
+}
+
+.header_content{
+    padding-left: 80px;
+    padding-right: 80px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.header_content_right_home_login{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 14%;
+}
+
+.gotahost a{
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 600;
+}
+
+.gotahost:hover{
+    border-radius: 22px;
+    cursor: pointer;
+    padding: 12px;
+    background-color: #f0ecec;
+}
+
+.login_button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    cursor: pointer;
+    margin: 0;
+    border: 1px solid #DDDDDD;
+    border-radius: 21px;
+    padding: 5px 5px 5px 12px;
+    transition: 0.2s;
+}
+
+.login_button:hover{
+    box-shadow: 0 1px 2px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.header_content_right_home_user{
+    flex: 0 0 30px;
+    height: 30px;
+    width: 30px;
+    margin-left: 12px;
+}
+
+/* MAIN FRIENDLY SECTION CSS THERE */
+
+.friendly{
+    padding: 8px 80px 64px;
+}
+
+.text{
+    font-size: 88px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.friendly_content h2{
+    text-align: center;
+    margin-bottom: 64px;
+    font-size: 28px;
+    line-height: 1.15;
+    font-weight: 400;
+}
+
+.button{
+    text-align: center;
+}
+
+.friendly_content button,
+.getStarted_content button{
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background: black;
+    padding: 16px 32px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* MAIN APARTMENS SECTION CSS */
+
+.aparments{
+    padding: 0 80px 80px;
+}
+
+.aparments_content{
+    width: 100%;
+    border-radius: 24px;
+    background-color: #EBEBEB;
+    display: flex;
+    justify-content: space-between;
+}
+
+.aparments_content .image{
+    width: 50%;
+}
+
+.aparments_content img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+}
+
+.aparments_content_right{
+    width: 50%;
+    padding: 40px;
+}
+
+.aparments_content_right h3{
+    width: 60%;
+    font-size: 32px;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    font-weight: 400;
+    margin-bottom: 43%;
+}
+
+.aparments_content_right p{
+    font-size: 22px;
+    line-height: 1.2;
+}
+
+.aparments_content_right p span{
+    display: block;
+    font-weight: 500;
+}
+
+.aparments_content_right_slide{
+    margin-top: 18px;
+}
+
+.aparments_content_right_slide button{
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    border: 1px solid #222222;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.aparments_content_right_slide button svg{
+    margin-left: 20%;
+}
+
+/* MAIN LOCATION SECTION CSS THERE */
+
+.location{
+    padding: 0 80px 64px;
+}
+
+.location_content{
+    width: 100%;
+    border-radius: 24px;
+    background-color: #EBEBEB;
+    display: flex;
+    justify-content: space-between;
+}
+
+.location_content_left{
+    width: 50%;
+    padding: 40px;
+}
+
+.location_content_left h3{
+    width: 60%;
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+
+.location_content_left a{
+    font-weight: 500;
+    text-decoration: underline;
+    display: block;
+    margin-bottom: 55%;
+}
+
+.location_content_left button{
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    touch-action: manipulation ;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+    border-radius: 8px;
+    border: 1px solid black;
+    outline: none ;
+    padding: 10px 17px;
+    background: transparent ;
+    display: flex;
+}
+
+.location_content_left button svg{
+    margin-right: 4px;
+}
+
+.location_content_image{
+    width: 50%;
+}
+
+.location_content_image img{
+    width: 100%;
+    height: 100%;
+}
+
+/* MAIN SECTION GETSTARTED CSS THERE */
+
+.getStarted_content{
+    padding: 64px 80px 128px;
+}
+
+.getStarted_content h2{
+    padding-bottom: 56px;
+    font-size: 52px;
+    font-weight: 500;
+    line-height: 1.05;
+    text-align: center;
+}
+
+.getStarted_content_middle{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 56px;
+}
+
+.getStarted_content_middle_item{
+    width: 30%;
+    text-align: center;
+}
+
+.getStarted_content_middle_item svg{
+    display: block;
+    margin: 16px auto;
+}
+
+.getStarted_content_middle_item h5{
+    margin: 0 auto;
+    width: 270px;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+/* MAIN FAG SECTION */
+
+.fag{
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.fag_content{
+    padding-left: 80px;
+    padding-right: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.fag_content_left h2{
+    margin-bottom: 32px;
+    font-size: 52px;
+    line-height: 54px;
+}
+
+.fag_content_left p{
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.fag_content_left p a{
+    color: #222222;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.fag_content_right_list{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fag_content_right_list div,
+.fag_content_left p{
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 300;
+    margin-right: 24px;
+}
+
+.fag_content_right_list svg{
+    margin-left: 16px;
+}
+
+.fag_content_right hr{
+    display: block;
+    border: 0;
+    border-top: 1px solid #DDDDDD;
+    margin-top: 24px;
+}
+
+/* MAIN CITYLIST SECTION CSS THERE */
+
+.cityList_content{
+    padding: 96px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.cityList_content_left{
+    width: 45%;
+}
+
+.cityList_content_left h2{
+    width: 280px;
+    line-height: 1.125;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 48px;
+}
+
+.cityList_content_left h3{
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.cityList_content_left p{
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.cityList_content_left p a{
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+.cityList_content_right{
+    width: 50%;
+}
+
+.cityList_content_right_list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cityList_content_right_list button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding-bottom: 12px;
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration: underline;
+    color: #717171;
+}
+
+.cityList_content_right_list a{
+    display: inline-block;
+    cursor: pointer;
+    padding-bottom: 12px;
+    font-size: 22px;
+    line-height: 26px;
+    color: #717171;
+}
+
+.cityList_content_right_list a:hover{
+    text-decoration: underline;
+    color: #222222;
+}
+
+.cityList_content_right_end{
+    margin-top: 72px;
+    display: flex;
+    align-items: center;
+}
+
+.cityList_content_right_end div{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-right: 16px;
+}
+
+.cityList_content_right_end button{
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 13px 23px;
+    background: transparent;
+}
+
+/* FOOTER */
+
+footer{
+    border-top: 1px solid #DDDDDD;
+    padding: 24px 80px;
+    background-color: #F7F7F7;
+}
+
+.footer_content,
+.footer_content_left,
+.footer_content_left ol,
+.footer_end_content_right ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.footer_content span, button, li{
+    color: #222222;
+    font-size: 14px;
+    line-height: 18px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.footer_end_content_right button{
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: #F7F7F7;
+    font-weight: 500;
+}
