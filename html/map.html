@@ -7,7 +7,8 @@
     <meta name="application-name" content="Airbnb">
     <link rel="shortcut icon" sizes="76x76" type="image/x-icon" href="https://a0.muscache.com/airbnb/static/logotype_favicon-21cc8e6c6a2cca43f061d2dcabdf6e58.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.css" />   
+    <link rel="stylesheet" href="../css/map.css">
     <title>Otellər, İstirahət evləri, Kirayə Evlər</title>
 </head>
 <body>
@@ -82,19 +83,6 @@
 
             </div>
         </header>
-
-        <!-- THIS IS LOGIN OPENED SECTION FOR JAVASCRIPT -->
-        <section class="login">
-            <div class="login_content">
-                <ul>
-                    <li>Daxil ol</li>
-                    <li>Qeydiyyatdan keç</li>
-                    <hr>
-                    <li>Airbnb sənin evin</li>
-                    <li>Dəstək</li>
-                </ul>
-            </div>
-        </section>
 
         <!-- NAV START THERE -->
         <nav>
@@ -196,37 +184,17 @@
             </div>
 
         </nav>
-
-        <!-- MAIN START THERE -->
+        
         <main>
-            <div class="main_content">
-                <div class="content">
-                <div class="main_content_filtr">
-                        <div class="main_content_filtr_left">
-                            <div>Toplam qiymətləri göstər</div>
-                            <span></span>
-                            <div>Bütün qiymətlər daxil, Vergilər xaric</div>
-                        </div>
-
-                        <div class="main_content_filtr_right">
-                            <button class="switch_button" type="button">
-                                <div class="button_content"></div>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="main_content_results">
-                    <div class="main_content_otels">
-                    </div>
-                </div>
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d52886007.09343406!2d31.78232555423459!3d35.99817050757555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shotel!5e0!3m2!1str!2saz!4v1684240773155!5m2!1str!2saz" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </main>
 
-        <div class="main_content_map">
-            <div class="map_content">
-                <button id="showMapButton">
-                    Xəritəni göstər
+        <div class="list_content_map">
+            <div class="list_content">
+                <button id="showListButton">
+                    Siyahını göstər
                     <span>
                     <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 16px; width: 16px; fill: #FFFFFF;"><path d="M31.245 3.747a2.285 2.285 0 0 0-1.01-1.44A2.286 2.286 0 0 0 28.501 2l-7.515 1.67-10-2L2.5 3.557A2.286 2.286 0 0 0 .7 5.802v21.95a2.284 2.284 0 0 0 1.065 1.941A2.29 2.29 0 0 0 3.498 30l7.515-1.67 10 2 8.484-1.886a2.285 2.285 0 0 0 1.802-2.245V4.247a2.3 2.3 0 0 0-.055-.5zM12.5 25.975l-1.514-.303L9.508 26H9.5V4.665l1.514-.336 1.486.297v21.349zm10 1.36l-1.515.337-1.485-.297V6.025l1.514.304L22.493 6h.007v21.335z"></path></svg>
                 </span>
@@ -234,159 +202,9 @@
             </div>
         </div>
 
-        <!-- THIS IS FOOTERS DETAIL SECTION FOR JAVASCRIPT -->
-        <section class="detail">
-            <div class="detail_content">
-                <div class="detail_content_remove">
-                    <button>
-                        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3px; overflow: visible;"><path d="m6 6 20 20"></path><path d="m26 6-20 20"></path></svg>
-                    </button>
-                </div>
-
-                <div class="detail_content_detailes">
-                    <section>
-                        <div>
-                            <h3>Dəstək</h3>
-                        </div>
-                        <ul>
-                            <li>
-                                <a href="#">Yardım Mərkəzi</a>
-                            </li>
-                            <li>
-                                <a href="#">AirCover</a>
-                            </li>
-                            <li>
-                                <a href="#">Məhdudiyyətli insanlara yardım</a>
-                            </li>
-                            <li>
-                                <a href="#">Ləğv seçimləri</a>
-                            </li>
-                            <li>
-                                <a href="#">COVID-19</a>
-                            </li>
-                            <li>
-                                <a href="#">Ətrafınızdaki problemi bildirin</a>
-                            </li>
-                        </ul>
-                    </section>
-                    
-                    <section>
-                        <div>
-                            <h3>Cəmiyyət</h3>
-                        </div>
-                        <ul>
-                            <li>
-                                <a href="#">Airbnb.org: fhn yardımı</a>
-                            </li>
-                            <li>
-                                <a href="#">Özgələşdirməklə mübarizə</a>
-                            </li>
-                        </ul>
-                    </section>
-                    
-                    <section>
-                        <div>
-                            <h3>Ev sahibliyi</h3>
-                        </div><ul>
-                            <li>
-                                <a href="#">Evinizi Airbnb'yə köçürün</a>
-                            </li>
-                            <li>
-                                <a href="#">Ev sahibləri üçün AirCover</a>
-                            </li>
-                            <li>
-                                <a href="#">Ev sahibi qaynaqlarını kəşf edin</a>
-                            </li>
-                            <li>
-                                <a href="#">Cəmiyyət formunu ziyarət edin</a>
-                            </li>
-                            <li>
-                                <a href="#">Məsuliyyətli ev sahibliyi</a>
-                            </li>
-                        </ul>
-                    </section>
-                    
-                    <section>
-                        <div>
-                            <h3>Airbnb</h3>
-                        </div>
-                        <ul>
-                            <li>
-                                <a href="#">Mətbuat</a>
-                            </li>
-                            <li>
-                                <a href="#">Yeni funksiyalar haqqında məlumat</a>
-                            </li>
-                            <li>
-                                <a href="#">CEO-larımızdan bir məktub</a>
-                            </li>
-                            <li>
-                                <a href="#">Kariyera</a>
-                            </li>
-                            <li>
-                                <a href="#">İnvenstrlar</a>
-                            </li>
-                        </ul>
-                    </section>                  
-                </div>
-
-            </div>
-        </section>
-
-        <footer>
-            <div class="footer_content">
-                <div class="footer_content_left">
-                    <div>
-                        <span>© 2023 Airbnb, Inc.</span>
-                        <span>·</span>
-                    </div>
-
-                    <div>
-                        <ol  class="footer_content_left_ol">
-                            <li>
-                                <a href="#">Gizlilik</a>
-                                <span>·</span>
-                            </li>
-                            <li>
-                                <a href="#">Şərtlər</a>
-                                <span>·</span>
-                            </li>                 
-                            <li>
-                                <a href="#">Sayt Xəritəsi</a>
-                            </li>
-                        </ol>
-                    </div>
-
-                </div>
-
-                <div class="footer_content_right">
-                    <div>
-                        <button>
-                            <span><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 16px; width: 16px; fill: currentcolor;"><path d="m8.002.25a7.77 7.77 0 0 1 7.748 7.776 7.75 7.75 0 0 1 -7.521 7.72l-.246.004a7.75 7.75 0 0 1 -7.73-7.513l-.003-.245a7.75 7.75 0 0 1 7.752-7.742zm1.949 8.5h-3.903c.155 2.897 1.176 5.343 1.886 5.493l.068.007c.68-.002 1.72-2.365 1.932-5.23zm4.255 0h-2.752c-.091 1.96-.53 3.783-1.188 5.076a6.257 6.257 0 0 0 3.905-4.829zm-9.661 0h-2.75a6.257 6.257 0 0 0 3.934 5.075c-.615-1.208-1.036-2.875-1.162-4.686l-.022-.39zm1.188-6.576-.115.046a6.257 6.257 0 0 0 -3.823 5.03h2.75c.085-1.83.471-3.54 1.059-4.81zm2.262-.424c-.702.002-1.784 2.512-1.947 5.5h3.904c-.156-2.903-1.178-5.343-1.892-5.494l-.065-.007zm2.28.432.023.05c.643 1.288 1.069 3.084 1.157 5.018h2.748a6.275 6.275 0 0 0 -3.929-5.068z"></path></svg></span>
-                            <span>Azərbaycan dili</span>
-                        </button>
-                    </div>
-
-                    <div>
-                        <button>
-                            <span>$</span>
-                            <span>USD</span>
-                        </button>
-                    </div>
-
-                    <div>
-                        <button>
-                            <span>Dəstək və qaynaqlar</span>
-                            <span><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4px; overflow: visible;"><g fill="none"><path d="m4 20 11.2928932-11.29289322c.3905243-.39052429 1.0236893-.39052429 1.4142136 0l11.2928932 11.29289322"></path></g></svg></span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
     </div>
-    
-    <script src="../js/dashboard.js"></script>
+    <script src="../js/map.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
 </body>
 </html>

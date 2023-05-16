@@ -26,85 +26,6 @@ a{
 }
 
 
-/* ==============================OTHER PAGE WITH JAVASCRIPT START */
-
-/* DETAIL */
-.detail_content{
-    display: none;
-    background: #FFFFFF;
-    overflow: clip;
-    position: relative;
-    height: fit-content;
-    max-height: 80vh;
-    width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.28) 0px 8px 28px;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    padding-right: 17px;
-}
-
-.detail_content_remove{
-    padding-left: 24px;
-    padding-top: 24px;
-}
-
-.detail_content_remove button{
-    cursor: pointer;
-    border: none;
-    background: transparent;
-    transition: transform 0.25s ease;
-}
-
-.detail_content_detailes{
-    width: 100%;
-    display: flex;
-    padding-left: 80px;
-    padding-right: 80px;
-    margin-top: 25px;
-}
-
-.detail_content_detailes section {
-    padding-left: 12px;
-    padding-right: 12px;
-    width: 24.8%;
-    margin-right: 70px;
-}
-
-.detail_content_detailes section div{
-    margin-left: 5px;
-    margin-bottom: 24px;
-    font-size: 14px;
-    line-height: 18px;
-}
-
-.detail_content_detailes li{
-    margin-top: 16px;
-    font-weight: 300;
-}
-
-/* LOGIN SECTION THERE */
-
-.login{
-    display: none;
-    width: 20%;
-}
-
-.login_content li{
-    padding-left: 24px;
-    margin-bottom: 12px;
-    margin-top: 12px;
-}
-
-.login_content hr{
-    font-weight: 100;
-    border-top: 1px solid gainsboro;
-}
-
-
-
-
-/* ==============================OTHER PAGE WITH JAVASCRIPT FINISH */
-
 /* HEADER START THERE */
 
 header{
@@ -310,139 +231,34 @@ nav img{
     padding-left: 12px;
 }
 
-/* NAV FINISH THERE MAIN FILTR STARTING THERE */
-
-main{
-    padding: 14px 80px;
-}
-
-.content{
-    display: flex;
-    justify-content: center;
-    margin: 2%;
-}
-
-.main_content_filtr{
-    display: inline-flex;
-    padding: 16px;
-    border: 1px solid #DDDDDD;
-    border-radius: 12px;
-}
-
-.main_content_filtr_left{
-    display: flex;
-    align-items: center;
-}
-
-.main_content_filtr_left div{
-    color: #222222;
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 19px;
-    padding: 0 16px;
-}
-
-.main_content_filtr_left div:nth-child(3){
-    color: #717171;
-    font-weight: 400;
-}
-
-
-.main_content_filtr_left span{
-    background-color: #DDDDDD;
-    flex: 0 0 1px;
-    height: 24px;
-    width: 1px;
-}
-
-.main_content_filtr_right{
-    margin-left: 110px;
-}
-
-.switch_button{
-    border-radius: 32px;
-    border: 1px solid darkgrey;
-    cursor: pointer;
-    background-color: darkgrey;
-    height: 32px;
-    position: relative;
-    min-width: 48px;
-    width: 48px;
-    outline: none;
-}
-
-.button_content{
-    border-radius: 50%;
-    border:2px solid darkgrey;
-    transform: translate3d(0,0,0);
-    transition: transform 250ms ease-in-out;
-    background-color: white;
-    width: 32px;
-    height: 32px;
-    position: absolute;
-    top: -1px;
-    left: -1px;
-}
-
-/* MAIN FILTR FINISH THERE MAIN CONTENT RESULTS STARTING THERE */
-
-.main_content_otels{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.main_content_otel{
-    width: 23.7%;
-    margin-bottom: 40px;
-}
-
-.main_content_otel_image{
-    margin-bottom: 10px;
-}
-
-.main_content_otel img{
+#map {
     width: 100%;
-    border-radius: 12px;
 }
 
-.main_content_otel_info_contry{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 500;
-    font-size: 16px;
+iframe{
+    width: 100%;
 }
 
-.main_content_otel_info_contry_starts{
-    font-weight: 300;
-    font-size: 16px;
+.hotel-label {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
 }
-
-.main_content_otel_info_detail div{
-    margin-top: 5px;
-    color: #717171;
-    font-weight: 300;
-    font-size: 15px;
-}
-
-.main_content_otel_info_price{
-    color: black;
-    font-weight: 400;
-    font-size: 15px;
-}
-
 
 /* MAIN CONTENT RESULTS FINISH THERE MAIN CONTENT MAP STARTING THERE */
 
-.main_content_map{
+.list_content_map{
     position: sticky;
     z-index: 9;
     height: 98px;
     bottom: 40px;
 }
 
-.map_content button{
+.list_content button{
     left: 45%;
     display: inline-flex;
     color: white;
@@ -456,46 +272,6 @@ main{
     background: rgb(34, 34, 34);
 }
 
-.map_content button span{
+.list_content button span{
     padding-left: 10px;
-}
-
-/* FOOTER */
-
-footer{
-    position: sticky;
-    bottom: 0;
-    border-top: 1px solid #DDDDDD;
-    padding: 14px 40px;
-    background-color: white;
-}
-
-.footer_content,
-.footer_content_left,
-.footer_content_left_ol,
-.footer_content_right{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer_content_left_ol{
-    margin: 0;
-    padding: 0;
-}
-
-.footer_content span, button, li{
-    color: #222222;
-    font-size: 14px;
-    line-height: 18px;
-    padding-right: 5px;
-    padding-left: 5px;
-}
-
-.footer_content_right button{
-    display: flex;
-    align-items: center;
-    border: none;
-    background-color: white;
-    font-weight: 600;
 }
