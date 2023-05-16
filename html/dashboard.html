@@ -14,8 +14,7 @@
     <div class="dashboard_container">
         <!-- HEADER START THERE -->
         <header>
-            <div class="header_content">
-                
+            <div class="header_content">              
                 <div class="header_content_left">
                     <div class="header_content_left_logo_responsive">
                         <a href="#">
@@ -54,7 +53,7 @@
 
                 <div class="header_content_right">
                     <div class="header_content_right_home">
-                        <a href="/host/homes">
+                        <a href="../html/airbnbhome.html">
                         <div>Evinizi Airbnb'yə köçürün</div>
                         </a>
                     </div>
@@ -66,7 +65,7 @@
                     </div> 
 
                     <div class="header_content_right_home_login">
-                        <button class="login_button">
+                        <button class="login_button" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <div>
                                 <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3px; overflow: visible;"><g fill="none" fill-rule="nonzero"><path d="m2 16h28"></path><path d="m2 24h28"></path><path d="m2 8h28"></path></g>
                                 </svg>
@@ -76,25 +75,66 @@
                                 </svg>
                             </div>
                         </button>
+                        <ul class="dropdown-menu my-dropdown">
+                            <li id="LogIn">Daxil ol</li>
+                            <li id="SignIn">Qeydiyyatdan keç</li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a href="../html/airbnbhome.html">Airbnb sənin evin</a></li>
+                            <li><a href="../html/help.html">Dəstək</a></li>
+                        </ul>
                     </div>
 
-                </div>
+                    
+                    <div class="modal" id="logModal" tabindex="-1">
+                        <div class="modal-dialog modal-dialog modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header modal_header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <h5 class="modal-title">Daxil ol və ya qeydiyyatdan keç</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <h3>Airbnb'yə Xoş Gəlmişsiniz</h3>
+                                    <form>
+                                        <div class="form-floating">
+                                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                                <option value="1VI">ABD Virjin Adaları (+1)</option><option value="93AF">Afganistan (+93)</option><option value="358AX">Åland Adaları (+358)</option><option value="49DE">Almanya (+49)</option>
+                                                <option value="1US">Amerika Birleşik Devletleri (+1)</option><option value="1AS">Amerikan Samoası (+1)</option><option value="376AD">Andorra (+376)</option><option value="244AO">Angola (+244)</option><option value="1AI">Anguilla (+1)</option><option value="1AG">Antigua ve Barbuda (+1)</option>
+                                                <option value="54AR">Arjantin (+54)</option><option value="355AL">Arnavutluk (+355)</option><option value="297AW">Aruba (+297)</option><option value="61AU">Avustralya (+61)</option><option value="43AT">Avusturya (+43)</option>
+                                                <option selected>Azerbaycan (+994)</option><option value="1BS">Bahamalar (+1)</option><option value="973BH">Bahreyn (+973)</option><option value="880BD">Bangladeş (+880)</option><option value="1BB">Barbados (+1)</option><option value="212EH">Batı Sahra (+212)</option>
+                                                <option value="375BY">Belarus (+375)</option><option value="32BE">Belçika (+32)</option><option value="501BZ">Belize (+501)</option><option value="229BJ">Benin (+229)</option><option value="1BM">Bermuda (+1)</option><option value="971AE">Birleşik Arap Emirlikleri (+971)</option>
+                                                <option value="44GB">Birleşik Krallık (+44)</option><option value="591BO">Bolivya (+591)</option><option value="599BQ">Bonaire, Sint Eustatius ve Saba (+599)</option><option value="387BA">Bosna-Hersek (+387)</option><option value="267BW">Botsvana (+267)</option>
+                                                <option value="55BR">Brezilya (+55)</option><option value="246IO">Britanya Hint Okyanusu Toprakları (+246)</option><option value="1VG">Britanya Virjin Adaları (+1)</option><option value="673BN">Brunei (+673)</option><option value="359BG">Bulgaristan (+359)</option><option value="226BF">Burkina Faso (+226)</option>
+                                                <option value="257BI">Burundi (+257)</option><option value="975BT">Butan (+975)</option><option value="238CV">Cape Verde (+238)</option><option value="1KY">Cayman Adaları (+1)</option><option value="350GI">Cebelitarık (+350)</option><option value="213DZ">Cezayir (+213)</option><option value="61CX">Christmas Adası (+61)</option>
+                                                <option value="374AM">Ermenistan (+374)</option><option value="372EE">Estonya (+372)</option><option value="268SZ">Esvatini (+268)</option><option value="251ET">Etiyopya (+251)</option><option value="500FK">Falkland Adaları (Malvinas) (+500)</option><option value="298FO">Faroe Adaları (+298)</option><option value="212MA">Fas (+212)</option>
+                                                <option value="679FJ">Fiji (+679)</option><option value="63PH">Filipinler (+63)</option><option value="970PS">Filistin Bölgeleri (+970)</option><option value="358FI">Finlandiya (+358)</option><option value="33FR">Fransa (+33)</option><option value="594GF">Fransız Guyanası (+594)</option>
+                                                <option value="689PF">Fransız Polinezyası (+689)</option><option value="241GA">Gabon (+241)</option><option value="220GM">Gambiya (+220)</option><option value="233GH">Gana (+233)</option><option value="224GN">Gine (+224)</option><option value="245GW">Gine-Bissau (+245)</option><option value="1GD">Grenada (+1)</option>
+                                                <option value="27ZA">Güney Afrika (+27)</option><option value="500GS">Güney Georgia ve Güney Sandwich Adaları (+500)</option><option value="82KR">Güney Kore (+82)</option><option value="211SS">Güney Sudan (+211)</option><option value="995GE">Gürcistan (+995)</option><option value="509HT">Haiti (+509)</option>
+                                                <option value="353IE">İrlanda (+353)</option><option value="34ES">İspanya (+34)</option><option value="972IL">İsrail (+972)</option><option value="46SE">İsveç (+46)</option><option value="41CH">İsviçre (+41)</option><option value="39IT">İtalya (+39)</option><option value="354IS">İzlanda (+354)</option><option value="1JM">Jamaika (+1)</option>
+                                                <option value="81JP">Japonya (+81)</option><option value="44JE">Jersey (+44)</option><option value="855KH">Kamboçya (+855)</option><option value="237CM">Kamerun (+237)</option><option value="1CA">Kanada (+1)</option><option value="382ME">Karadağ (+382)</option><option value="974QA">Katar (+974)</option><option value="7KZ">Kazakistan (+7)</option>
+                                                <option value="218LY">Libya (+218)</option><option value="423LI">Liechtenstein (+423)</option><option value="370LT">Litvanya (+370)</option><option value="961LB">Lübnan (+961)</option><option value="352LU">Lüksemburg (+352)</option><option value="36HU">Macaristan (+36)</option><option value="853MO">Makao (+853)</option>
+                                                <option value="222MR">Moritanya (+222)</option><option value="258MZ">Mozambik (+258)</option><option value="95MM">Myanmar (+95)</option><option value="264NA">Namibya (+264)</option><option value="674NR">Nauru (+674)</option><option value="977NP">Nepal (+977)</option><option value="227NE">Nijer (+227)</option><option value="234NG">Nijerya (+234)</option>
+                                                <option value="250RW">Ruanda (+250)</option><option value="7RU">Rusya (+7)</option><option value="590BL">Saint Barthelemy (+590)</option><option value="290SH">Saint Helena (+290)</option><option value="1KN">Saint Kitts ve Nevis (+1)</option><option value="1LC">Saint Lucia (+1)</option><option value="590MF">Saint Martin (+590)</option>
+                                                <option value="65SG">Singapur (+65)</option><option value="1SX">Sint Maarten (+1)</option><option value="421SK">Slovakya (+421)</option><option value="386SI">Slovenya (+386)</option><option value="677SB">Solomon Adaları (+677)</option><option value="252SO">Somali (+252)</option><option value="94LK">Sri Lanka (+94)</option><option value="249SD">Sudan (+249)</option>
+                                                <option value="597SR">Surinam (+597)</option><option value="90TR">Türkiye (+90)</option>
+                                                <option value="678VU">Vanuatu (+678)</option><option value="379VA">Vatikan (+379)</option><option value="58VE">Venezuela (+58)</option><option value="84VN">Vietnam (+84)</option><option value="681WF">Wallis ve Futuna (+681)</option><option value="967YE">Yemen (+967)</option><option value="687NC">Yeni Kaledonya (+687)</option>
+                                            </select>
+                                            <label for="floatingSelect">Ölkə/Bölgə</label>
+                                        </div>
+                                        <div class="form-floating">
+                                            <input type="number" class="form-control" id="floatingInputGrid">
+                                            <label for="floatingInputGrid">Telefon nömrəsi</label>
+                                        </div>
+                                        <p>Nömrənizi təsdiq etmək üçün sizə zəng edəcək və ya bir qısa mesaj göndərəcik. Standart mesaj və məlumat qiymətləri tətbiq olunur. <a href="https://www.airbnb.com/help/article/2855?_set_bev_on_new_domain=1683382086_MDUzNWY2OGJjM2U0&locale=en">Gizlilik Politikası</a></p>
+                                        <button>Davam Et</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
 
+                </div>
             </div>
         </header>
-
-        <!-- THIS IS LOGIN OPENED SECTION FOR JAVASCRIPT -->
-        <section class="login">
-            <div class="login_content">
-                <ul>
-                    <li>Daxil ol</li>
-                    <li>Qeydiyyatdan keç</li>
-                    <hr>
-                    <li>Airbnb sənin evin</li>
-                    <li>Dəstək</li>
-                </ul>
-            </div>
-        </section>
 
         <!-- NAV START THERE -->
         <nav>
@@ -226,7 +266,7 @@
         <div class="main_content_map">
             <div class="map_content">
                 <button id="showMapButton">
-                    Xəritəni göstər
+                    <a href="../html/map.html">Xəritəni göstər</a>
                     <span>
                     <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 16px; width: 16px; fill: #FFFFFF;"><path d="M31.245 3.747a2.285 2.285 0 0 0-1.01-1.44A2.286 2.286 0 0 0 28.501 2l-7.515 1.67-10-2L2.5 3.557A2.286 2.286 0 0 0 .7 5.802v21.95a2.284 2.284 0 0 0 1.065 1.941A2.29 2.29 0 0 0 3.498 30l7.515-1.67 10 2 8.484-1.886a2.285 2.285 0 0 0 1.802-2.245V4.247a2.3 2.3 0 0 0-.055-.5zM12.5 25.975l-1.514-.303L9.508 26H9.5V4.665l1.514-.336 1.486.297v21.349zm10 1.36l-1.515.337-1.485-.297V6.025l1.514.304L22.493 6h.007v21.335z"></path></svg>
                 </span>

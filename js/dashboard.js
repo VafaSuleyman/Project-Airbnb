@@ -1,7 +1,19 @@
 let loginButton = document.querySelector('login_button');
 const container = document.querySelector(".main_content_otels"); 
-let showMapButton = document.getElementById('showMapButton');
+const liLogIn = document.getElementById("LogIn");
+const liSignIn = document.getElementById("SignIn");
 
+
+liLogIn.addEventListener("click", function() {
+  var modal = new bootstrap.Modal(document.getElementById("logModal"));
+  modal.show();
+});
+
+
+liSignIn.addEventListener("click", function() {
+  var modal = new bootstrap.Modal(document.getElementById("signModal"));
+  modal.show();
+});
 
 const hotels = [
   {
@@ -704,8 +716,5 @@ hotels.forEach((hotel) => {
 // Oluşturulan HTML içeriğini konteynere ekleme
 container.innerHTML += hotelHTML;
 });
-
-showMapButton.addEventListener('click', function() {
-  let newWindow = window.open('map.html', '_blank');
-});         
+       
   

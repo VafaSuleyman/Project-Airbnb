@@ -272,6 +272,10 @@ iframe{
     background: rgb(34, 34, 34);
 }
 
+.list_content button a{
+    color: white;
+}
+
 .list_content button span{
     padding-left: 10px;
 }

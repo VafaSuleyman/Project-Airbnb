@@ -1,8 +1,8 @@
 let showListButton = document.getElementById('showListButton');
 
-showListButton.addEventListener('click', function() {
-    let newWindow = window.open('dashboard.html', '_blank');
-}); 
+// showListButton.addEventListener('click', function() {
+//     let newWindow = window.open('dashboard.html', '_blank');
+// }); 
 
 
 const hotels = [
