@@ -240,25 +240,117 @@ header{
     width: 24.9%;
 }
 
-/* MAIN HOMEINFO CSS THERE */
+/* MAIN HOMEINFO SECTION CSS THERE */
+
+.homeInfo{
+    padding-left: 215px;
+    padding-right: 200px;
+}
 
 .homeInfo_content{
-    padding: 48px 215px 48px 200px;
+    padding: 48px 0;
+    border-bottom: 1px solid darkgray;
     display: flex;
     justify-content: space-between;
     width: 100%;
-    position: relative;
+}
+
+.homeInfo_content_left{
+    width: 57%;
+}
+
+.left_dates,
+.left_property{
+    padding-top: 48px;
+    padding-bottom: 48px;
+    border-top: 1px solid darkgray;
+}
+
+.left_properties{
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.left_properties_item{
+    width: 48%;
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.left_properties_item{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.left_property_button{
+    margin-top: 24px;
+}
+
+.left_property_button button{
+    border-radius: 8px;
+    border: 1px solid black;
+    transition: box-shadow 0.2s ease,transform 0.1s ease;
+    background: white;
+    font-weight: 500;
+    padding: 13px 23px;
+}
+
+.left_properties_item svg{
+    margin-right: 16px;
+}
+
+.left_dates_header h2,
+.left_property h2{
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 8px;
+}
+
+.left_dates_header h6{
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 350;
+    color: rgb(113, 113, 113);
+    margin-bottom: 12px;
+}
+
+.left_dates_calendar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.jsCalendar table{
+    box-shadow: none;
+}
+
+.left_dates_button{
+    margin-top: 8px;
+    text-align: right;
+}
+
+.left_dates button{
+    text-decoration: underline;
+    padding: 8px;
+    font-weight: 500;
+    border: none;
+    background: transparent;
+    margin-left: -8px;
+    margin-right: -8px;
 }
 
 .homeInfo_content_right{
     padding-top: 48px;
     width: 33%;
-    position: sticky;
-    bottom: 0;
-    right: 0;
+    position: relative;
 }
 
 .homeInfo_content_right_reserve{
+    position: sticky;
+    bottom: 48px;
+    right: 0;
     border: 1px solid rgb(221, 221, 221);
     border-radius: 12px;
     padding: 24px;
@@ -356,10 +448,340 @@ header{
     text-align: center;
 }
 
+/* MAIN COMMENT SECTION THERE */
+
+.comment_content{
+    padding: 48px 216px 48px 200px;
+    margin-bottom: 1px solid darkgray;
+}
+
+.comment_content h2{
+    font-size: 22px;
+    margin-bottom: 32px;
+}
+
+.comment_content h2 svg{
+    margin-right: 8px;
+}
+
+.comment_content_points{
+    width: 100%;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.comment_content_points_item{
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 43%;
+}
+
+.comment_content_points_item h5{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.item_points{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.item_points div {
+    position: relative;
+    height: 4px;
+    width: 90%;
+    margin-right: 12px;
+    background: rgb(221, 221, 221);
+    border-radius: 2px;
+}
+
+.item_points div span{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    background: rgb(34, 34, 34);
+    border-radius: 2px;
+}
+
+.comment_content_profils{
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.comment_content_profil{
+    width: 41.6667%;
+    margin-right: 8.33333%;
+    margin-bottom: 40px;
+
+}
+
+.comment_content_profil_name{
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.comment_content_profil_name div h3{
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.comment_content_profil_name div h6{
+    color: rgb(113, 113, 113);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.comment_content_profil_name img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.comment_content_profil p{
+    line-height: 24px;
+    font-size: 16px;
+}
+
+/* MAIN WHERE SECTION MAP ARTICLE */
+
+.where{
+    padding: 48px 215px 48px 200px;
+}
+
+.where_map{
+    padding-bottom: 48px;
+    border-bottom: 1px solid darkgray;
+}
+
+.where_map h2{
+    margin-bottom: 12px;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.where_map img{
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.where_map h3{
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.where_map p,
+.where_host_body_left p{
+    line-height: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    font-size: 16px;
+}
+
+.where_map button,
+.where_host_body_left button,
+.where_rule_body_item button{
+    margin-top: 16px;
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+/* MAIN WHERE SECTION WHERE HOST ARTICLE */
+
+.where_host{
+    padding-top: 48px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid darkgray;
+}
+
+.where_host_header{
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.where_host_header img{
+    margin-right: 16px;
+    width: 64px;
+    height: 64px;
+}
+
+.where_host_header h2,
+.where_rule h2{
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 12px;
+}
+
+.where_host_header p{
+    color: #717171;
+}
+
+.where_host_body{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.where_host_body_left{
+    width: 42%;
+}
+
+.where_host_body_left ul{
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.where_host_body_left ul li{
+    display: flex;
+    align-items: center;
+    padding-right: 12px;
+}
+
+.where_host_body_left ul li span{
+    margin-left: 8px;
+    font-size: 16px;
+    line-height: 20px;
+} 
+
+.where_host_body_right{
+    width: 50%;
+}
+
+.where_host_body_right ul{
+    margin-bottom: 48px;
+}
+
+.where_host_body_right ul li{
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: 20px;
+}
+
+.where_host_body_right a,
+.comment_content a{
+    display: block;
+    width: 45%;
+    border-radius: 8px;
+    border: 1px solid black;
+    padding: 16px;
+}
+
+.where_host_body_right_info{
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.where_host_body_right_info svg{
+    margin-right: 16px;
+}
+
+.where_host_body_right_info p{
+    width: 50%;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+/* MAIN WHERE SECTION WHERE_RULE ARTICLE */
+
+.where_rule{
+    padding-top: 48px;
+}
+
+.where_rule_body{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.where_rule_body_item{
+    width: 33%;
+}
+
+.where_rule_body_item h3{
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 12px;
+}
+
+.where_rule_body_item p{
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+/* MAIN SECTION kissonerga  */
+
+.kissonerga{
+    background-color: #F7F7F7;
+    border-top: 1px solid darkgray;
+    border-bottom: 1px solid darkgrey;
+}
+
+.kissonerga_content{
+    padding: 48px 216px 28px 200px;
+}
+
+.kissonerga_content h2{
+    margin-bottom: 36px;
+    font-size: 22px;
+}
+
+.kissonerga_content_body{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.kissonerga_content_body div{
+    width: 25%;
+    padding: 8px;
+}
+
+.kissonerga_content_body div span{
+    color: #717171;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.kissonerga_content_footer{
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.kissonerga_content_footer span{
+    color: rgb(72, 72, 72);
+    font-size: 14px;
+    padding: 0 5px;
+}
+
+
 /* FOOTER */
 
 footer{
-    padding: 14px 200px 14px 215px;
+    padding: 14px 216px 14px 200px;
     background-color: #F7F7F7;
 }
 
@@ -380,7 +802,6 @@ footer{
 }
 
 .footer_content_detailes section {
-    padding-left: 12px;
     padding-right: 12px;
     width: 24.8%;
     margin-right: 70px;

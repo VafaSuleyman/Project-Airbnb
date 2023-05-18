@@ -389,6 +389,7 @@ header{
     padding-right: 200px;
     padding-left: 200px;
     margin: 64px auto 0;
+    border-bottom: 1px solid darkgray;
 }
 
 .first_article div{

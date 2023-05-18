@@ -157,11 +157,10 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 21%;
+    width: 23%;
 }
 
-
-.header_content_right button{
+.login_button{
     display: flex;
     align-items: center;
 }
@@ -171,17 +170,121 @@ header{
     font-weight: 500;
 }
 
+
+
 .header_content_right_home div:hover{
     padding: 8px;
     border-radius: 22px;
     background-color: #F7F7F7;
 }
 
-.header_content_right_home_country button{
+.header_content_right_home_country_button{
     background: transparent;
     border: 0;
     cursor: pointer;
 }
+
+/* COUNTRY MODAL CSS CODE */
+
+.country_modal_header{
+    border-bottom: none;
+}
+
+.translate{
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(247, 247, 247);
+    border-radius: 8px;
+    margin-top: 48px;
+    margin-bottom: 24px;
+    padding: 16px;
+}
+
+.translate_info_head span{
+    font-size: 16px;
+    line-height: 20px;
+    margin-right: 8px;
+}
+
+.translate_info_note{
+    font-size: 14px;
+    line-height: 20px;
+    color: rgb(113, 113, 113);
+    margin-top: 8px;
+}
+
+.default_lang{
+    margin: 24px 0;
+}
+
+.default_lang h2,
+.all_lang h2{
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 24px;
+}
+
+.all_lang_ul{
+    margin: -8px;
+    padding: 0;
+}
+
+.all_lang_ul li{
+    width: 19%;
+    display: inline-block;
+    padding: 8px;
+    vertical-align: top
+}
+
+.all_lang_ul li a{
+    font-size: 14px;
+    line-height: 18px;
+    display: block;
+    padding: 9px 12px;
+    width: 100%;
+}
+
+.all_lang_ul li a div:nth-child(2){
+    color: rgb(113, 113, 113);
+}
+
+.all_lang_ul li a:hover{
+    border: 1px solid currentcolor;
+    border-radius: 8px;
+}
+
+.default_lang h5,
+.default_lang h6{
+    padding: 5px 12px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.default_lang h6{
+    color: #717171;
+}
+
+
+.nav-tabs li{
+    padding: 12px;
+    margin-right: 6px;
+    margin-left: -10px;
+}
+
+.nav-tabs li a{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    color: #717171;
+}
+
+.nav-tabs li:hover{
+    color: #222222;
+    border-bottom: 2px solid black;
+}
+
 
 .header_content_right_home_country button:hover{
     border-radius: 50%;
@@ -226,6 +329,10 @@ header{
 
 /* MODAL LOGIN SIGN IN */
 
+.modal-backdrop{
+    z-index: 9;
+}
+
 .modal_header{
     padding: 8px 24px;
     border-bottom: 1px solid #EBEBEB;
@@ -233,19 +340,38 @@ header{
     line-height: 20px;
     font-weight: 600;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-start !important;
 }
 
-#logModal{
-    z-index: 2000 !important;
+.modal-header .btn-close {
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 .modal_header h5{
-    margin-left: 150px;
+    margin-left: 20%
 }
 
 .modal-body{
     padding: 24px;
+}
+
+.form-select{
+    border-bottom: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.form-control{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
 
 .modal-body h3{
@@ -254,7 +380,6 @@ header{
     font-size: 22px;
     line-height: 26px;
     font-weight: 500;
-    text-align: center;
 }
 
 .modal-body p{
@@ -270,13 +395,67 @@ header{
     text-decoration: underline;
 }
 
-.modal-body button{
+.modal-body_button{
+    width: 100%;
+    text-align: center;
     margin-top: 16px;
     margin-bottom: 24px;
-    border-radius: 80px;
+    border-radius: 12px;
     padding: 14px 24px;
     border: none;
-    background-color: linear-gradient(to right,#E61E4D 0%,#E31C5F 50%,#D70466 100%);
+    background: linear-gradient(to right,#E61E4D 0%,#E31C5F 50%,#D70466 100%);
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.or_hr{
+    -webkit-box-align: center;
+    display: flex;
+    align-items: center;
+    margin: 16px 0px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.or_hr::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(221, 221, 221);
+    margin-right: 16px;
+}
+
+.or_hr::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(221, 221, 221);
+    margin-left: 16px;
+}
+
+.sosial_list{
+    width: 100%;
+}
+
+.sosial_list_item{
+    margin-bottom: 16px;
+    border-radius: 8px;
+    border: 1px solid black;
+    padding: 13px 23px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.sosial_list_item div{
+    width: 100%;
+    text-align: center;
 }
 
 
@@ -321,7 +500,7 @@ nav{
 }
 
 .nav_content_category li:hover{
-    border-bottom: 2px solid rgb(189, 193, 197);
+    border-bottom: 2px solid rgb(223, 223, 223);
     transition: color 0.2s ease;
 }
 
@@ -411,22 +590,25 @@ main{
     margin-left: 110px;
 }
 
-.switch_button{
+.switch_button,
+.translate_switch_button{
     border-radius: 32px;
     border: 1px solid darkgrey;
     cursor: pointer;
     background-color: darkgrey;
     height: 32px;
     position: relative;
+    padding: 0;
     min-width: 48px;
     width: 48px;
     outline: none;
     transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
-.button_content{
+.button_content,
+.translate_button_content{
     border-radius: 50%;
-    border:2px solid darkgrey;
+    border: 2px solid darkgrey;
     transform: translate3d(0,0,0);
     background-color: white;
     width: 32px;
@@ -468,7 +650,10 @@ main{
 
 .main_content_otel img{
     width: 100%;
+    min-height: 316px;
+    max-height: 316px;
     border-radius: 12px;
+    object-fit: cover;
 }
 
 .main_content_otel_info_contry{

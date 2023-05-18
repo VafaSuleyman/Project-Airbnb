@@ -7,16 +7,7 @@ const buttonContent = document.querySelector('.button_content');
 const navItems = document.querySelectorAll('.nav_content_category li');
 
 
-// liLogIn.addEventListener("click", function() {
-//   var modal = new bootstrap.Modal(document.getElementById("logModal"));
-//   modal.show();
-// });
-
-
-liSignIn.addEventListener("click", function() {
-  var modal = new bootstrap.Modal(document.getElementById("signModal"));
-  modal.show();
-});
+// Hotel Array
 
 const hotels = [
   {
@@ -666,6 +657,7 @@ const hotels = [
 hotels.forEach((hotel) => {
   const hotelHTML = `
     <div class="main_content_otel">
+    <a href = "../html/learnmore.html">
       <div id="carouselExampleIndicators" class="carousel slide">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -715,6 +707,7 @@ hotels.forEach((hotel) => {
         <div><span class="main_content_otel_info_price">$${hotel.price}</span> ${hotel.night}</div>
       </div>
     </div>
+  </a>
   </div>
 `;
 
@@ -825,6 +818,7 @@ if (isClicked) {
     isClicked = !isClicked;
 });
 
+// Filterlənmiş otellərin update olması üçün
 function updateHotelPrices() {
   const hotelPriceElements = document.querySelectorAll('.main_content_otel_info_price');
 
