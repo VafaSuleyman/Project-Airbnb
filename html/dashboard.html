@@ -76,7 +76,7 @@
                             </div>
                         </button>
                         <ul class="dropdown-menu my-dropdown">
-                            <li id="LogIn">Daxil ol</li>
+                            <li data-bs-toggle="modal" data-bs-target="#logModal" id="LogIn">Daxil ol</li>
                             <li id="SignIn">Qeydiyyatdan keç</li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a href="../html/airbnbhome.html">Airbnb sənin evin</a></li>
@@ -135,93 +135,125 @@
                 </div>
             </div>
         </header>
-
         <!-- NAV START THERE -->
         <nav>
             <div class="nav_content">
-                <div class="nav_content_categories">
-                    <ul class="nav_content_category">
-                        <li>
-                            <img src="../assets/nav_icons/nav1_lock.jpg">
-                            <div>Populyar</div>
-                        </li>
-                        <li>
-                            <img src="../assets/nav_icons/nav2_kirsal.jpg">
-                            <div>Çəmənlik</div>
-                        </li>
-                        <li>
-                            <img src="../assets/nav_icons/nav3-popular.jpg">
-                            <div>Sevimli</div>
-                        </li>
-                        <li>
-                            <img src="../assets/nav_icons/nav4-luxe.jpg">
-                            <div>Lux</div>
-                        </li>
-                        <li>
-                            <img src="../assets/nav_icons/nav5-klub.jpg">
-                            <div>Klub</div>
-                        </li>
-                        <li>
-                            <img src="../assets/nav_icons/nav6- sorf.jpg">
-                            <div>Sorf</div>
-                        </li>
-                        <li>
-                            <img src="../assets/nav_icons/nav7-palm.jpg">
-                            <div>Palma</div>
-                        </li>
-                        <li>
-                            <img src="../assets/nav_icons/nav8-tasarim.jpg">
-                            <div>Dizayn</div>
-                        </li>
-                        <li>
-                            <img src="../assets/nav_icons/nav9-olaganustu.jpg">
-                            <div>Mükəmməl</div>
-                        </li>
-                        <li>
-                            <img src="../assets/nav_icons/nav10-sahil.jpg">
-                            <div>Sahil</div>
-                        </li>
-                        <li>
-                            <img src="../assets/nav_icons/nav11-ev.jpg">
-                            <div>Ev</div>
-                        </li>
-                        <li>
-                            <img src="../assets/nav_icons/nav12-havuz.jpg">
-                            <div>Hovuz</div>
-                        </li>
-                        <li>
-                            <img src="../assets/nav_icons/nav13-manzara.jpg">
-                            <div>Mənzərə</div>
-                        </li>
-                        <li>
-                            <img src="../assets/nav_icons/nav14-kuzey kutbu.jpg">
-                            <div>Şimal Qütb</div>
-                        </li>
-                        <li>
-                            <img src="../assets/nav_icons/nav15-kamp.jpg">
-                            <div>Camp</div>
-                        </li>
-                        <li>
-                            <img src="../assets/nav_icons/nav16-park.jpg">
-                            <div>Park</div>
-                        </li>
-                        <li>
-                            <img src="../assets/nav_icons/nav17-ucgen ev.jpg">
-                            <div>Triplex</div>
-                        </li>
-                        <li>
-                            <img src="../assets/nav_icons/nav18-tropik.jpg">
-                            <div>Tropik</div>
-                        </li>
-                        <li>
-                            <img src="../assets/nav_icons/nav19-sepcial oda.jpg">
-                            <div>Xüsusi</div>
-                        </li>
-                        <li>
-                            <img src="../assets/nav_icons/nav20-tree house.jpg">
-                            <div>Ağac ev</div>
-                        </li>
-                    </ul>
+                <div id="filterCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="nav_content_categories carousel-item active">
+                            <ul class="nav_content_category filter-list">
+                                <li class="filter-item">
+                                    <img src="../assets/nav_icons/nav1_lock.jpg">
+                                    <div>Populyar</div>
+                                </li>
+                                <li class="filter-item">
+                                    <img src="../assets/nav_icons/nav2_kirsal.jpg">
+                                    <div>Çəmənlik</div>
+                                </li>
+                                <li class="filter-item" id="favori">
+                                    <img src="../assets/nav_icons/nav3-popular.jpg">
+                                    <div>Sevimli</div>
+                                </li>
+                                <li class="filter-item" id="lux">
+                                    <img src="../assets/nav_icons/nav4-luxe.jpg">
+                                    <div>Lux</div>
+                                </li>
+                                <li class="filter-item">
+                                    <img src="../assets/nav_icons/nav5-klub.jpg">
+                                    <div>Klub</div>
+                                </li>
+                                <li class="filter-item" id="sorf">
+                                    <img src="../assets/nav_icons/nav6- sorf.jpg">
+                                    <div>Sorf</div>
+                                </li>
+                                <li class="filter-item">
+                                    <img src="../assets/nav_icons/nav7-palm.jpg">
+                                    <div>Palma</div>
+                                </li>
+                                <li class="filter-item">
+                                    <img src="../assets/nav_icons/nav8-tasarim.jpg">
+                                    <div>Dizayn</div>
+                                </li>
+                                <li class="filter-item">
+                                    <img src="../assets/nav_icons/nav9-olaganustu.jpg">
+                                    <div>Mükəmməl</div>
+                                </li>
+                                <li class="filter-item" id="sahil">
+                                    <img src="../assets/nav_icons/nav10-sahil.jpg">
+                                    <div>Sahil</div>
+                                </li>
+                                <li class="filter-item" id="ev">
+                                    <img src="../assets/nav_icons/nav11-ev.jpg">
+                                    <div>Ev</div>
+                                </li>
+                                <li class="filter-item" id="hovus">
+                                    <img src="../assets/nav_icons/nav12-havuz.jpg">
+                                    <div>Hovuz</div>
+                                </li>
+                                <li class="filter-item">
+                                    <img src="../assets/nav_icons/nav13-manzara.jpg">
+                                    <div>Mənzərə</div>
+                                </li>
+                                <li class="filter-item">
+                                    <img src="../assets/nav_icons/nav14-kuzey kutbu.jpg">
+                                    <div>Şimal Qütb</div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="nav_content_categories carousel-item">
+                            <ul class="nav_content_category filter-list">
+                                <li class="filter-item">
+                                    <img src="../assets/nav_icons/nav13-manzara.jpg">
+                                    <div>Mənzərə</div>
+                                </li>
+                                <li class="filter-item">
+                                    <img src="../assets/nav_icons/nav14-kuzey kutbu.jpg">
+                                    <div>Şimal Qütb</div>
+                                </li>
+                                <li class="filter-item" id="camp">
+                                    <img src="../assets/nav_icons/nav15-kamp.jpg">
+                                    <div>Camp</div>
+                                </li>
+                                <li class="filter-item">
+                                    <img src="../assets/nav_icons/nav16-park.jpg">
+                                    <div>Park</div>
+                                </li>
+                                <li class="filter-item" id="triplex">
+                                    <img src="../assets/nav_icons/nav17-ucgen ev.jpg">
+                                    <div>Triplex</div>
+                                </li>
+                                <li class="filter-item" id="tropic">
+                                    <img src="../assets/nav_icons/nav18-tropik.jpg">
+                                    <div>Tropik</div>
+                                </li>
+                                <li class="filter-item">
+                                    <img src="../assets/nav_icons/nav19-sepcial oda.jpg">
+                                    <div>Xüsusi</div>
+                                </li>
+                                <li class="filter-item">
+                                    <img src="../assets/nav_icons/nav20-tree house.jpg">
+                                    <div>Ağac ev</div>
+                                </li>
+                                <li class="filter-item">
+                                    <img src="../assets/nav_icons/nav13-manzara.jpg">
+                                    <div>Mənzərə</div>
+                                </li>
+                                <li class="filter-item">
+                                    <img src="../assets/nav_icons/nav14-kuzey kutbu.jpg">
+                                    <div>Şimal Qütb</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#filterCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Önceki</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#filterCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Sonraki</span>
+                    </button>
                 </div>
 
                 <div class="nav_content_filter">
@@ -241,7 +273,7 @@
         <main>
             <div class="main_content">
                 <div class="content">
-                <div class="main_content_filtr">
+                    <div class="main_content_filtr">
                         <div class="main_content_filtr_left">
                             <div>Toplam qiymətləri göstər</div>
                             <span></span>
@@ -273,105 +305,6 @@
                 </button>
             </div>
         </div>
-
-        <!-- THIS IS FOOTERS DETAIL SECTION FOR JAVASCRIPT -->
-        <section class="detail">
-            <div class="detail_content">
-                <div class="detail_content_remove">
-                    <button>
-                        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3px; overflow: visible;"><path d="m6 6 20 20"></path><path d="m26 6-20 20"></path></svg>
-                    </button>
-                </div>
-
-                <div class="detail_content_detailes">
-                    <section>
-                        <div>
-                            <h3>Dəstək</h3>
-                        </div>
-                        <ul>
-                            <li>
-                                <a href="#">Yardım Mərkəzi</a>
-                            </li>
-                            <li>
-                                <a href="#">AirCover</a>
-                            </li>
-                            <li>
-                                <a href="#">Məhdudiyyətli insanlara yardım</a>
-                            </li>
-                            <li>
-                                <a href="#">Ləğv seçimləri</a>
-                            </li>
-                            <li>
-                                <a href="#">COVID-19</a>
-                            </li>
-                            <li>
-                                <a href="#">Ətrafınızdaki problemi bildirin</a>
-                            </li>
-                        </ul>
-                    </section>
-                    
-                    <section>
-                        <div>
-                            <h3>Cəmiyyət</h3>
-                        </div>
-                        <ul>
-                            <li>
-                                <a href="#">Airbnb.org: fhn yardımı</a>
-                            </li>
-                            <li>
-                                <a href="#">Özgələşdirməklə mübarizə</a>
-                            </li>
-                        </ul>
-                    </section>
-                    
-                    <section>
-                        <div>
-                            <h3>Ev sahibliyi</h3>
-                        </div><ul>
-                            <li>
-                                <a href="#">Evinizi Airbnb'yə köçürün</a>
-                            </li>
-                            <li>
-                                <a href="#">Ev sahibləri üçün AirCover</a>
-                            </li>
-                            <li>
-                                <a href="#">Ev sahibi qaynaqlarını kəşf edin</a>
-                            </li>
-                            <li>
-                                <a href="#">Cəmiyyət formunu ziyarət edin</a>
-                            </li>
-                            <li>
-                                <a href="#">Məsuliyyətli ev sahibliyi</a>
-                            </li>
-                        </ul>
-                    </section>
-                    
-                    <section>
-                        <div>
-                            <h3>Airbnb</h3>
-                        </div>
-                        <ul>
-                            <li>
-                                <a href="#">Mətbuat</a>
-                            </li>
-                            <li>
-                                <a href="#">Yeni funksiyalar haqqında məlumat</a>
-                            </li>
-                            <li>
-                                <a href="#">CEO-larımızdan bir məktub</a>
-                            </li>
-                            <li>
-                                <a href="#">Kariyera</a>
-                            </li>
-                            <li>
-                                <a href="#">İnvenstrlar</a>
-                            </li>
-                        </ul>
-                    </section>                  
-                </div>
-
-            </div>
-        </section>
 
         <footer>
             <div class="footer_content">
@@ -415,10 +348,103 @@
                     </div>
 
                     <div>
-                        <button>
+                        <button class="btn btn-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
                             <span>Dəstək və qaynaqlar</span>
                             <span><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4px; overflow: visible;"><g fill="none"><path d="m4 20 11.2928932-11.29289322c.3905243-.39052429 1.0236893-.39052429 1.4142136 0l11.2928932 11.29289322"></path></g></svg></span>
                         </button>
+                        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+                            <div class="offcanvas-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div class="detail_content_detailes">
+                                    <section>
+                                        <div>
+                                            <h3>Dəstək</h3>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <a href="../html/help.html">Yardım Mərkəzi</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">AirCover</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Məhdudiyyətli insanlara yardım</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Ləğv seçimləri</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">COVID-19</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Ətrafınızdaki problemi bildirin</a>
+                                            </li>
+                                        </ul>
+                                    </section>
+                                    
+                                    <section>
+                                        <div>
+                                            <h3>Cəmiyyət</h3>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <a href="#">Airbnb.org: fhn yardımı</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Özgələşdirməklə mübarizə</a>
+                                            </li>
+                                        </ul>
+                                    </section>
+                                    
+                                    <section>
+                                        <div>
+                                            <h3>Ev sahibliyi</h3>
+                                        </div><ul>
+                                            <li>
+                                                <a href="../html/airbnbhome.html">Evinizi Airbnb'yə köçürün</a>
+                                            </li>
+                                            <li>
+                                                <a href="../html/aircover.html">Ev sahibləri üçün AirCover</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Ev sahibi qaynaqlarını kəşf edin</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Cəmiyyət formunu ziyarət edin</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Məsuliyyətli ev sahibliyi</a>
+                                            </li>
+                                        </ul>
+                                    </section>
+                                    
+                                    <section>
+                                        <div>
+                                            <h3>Airbnb</h3>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <a href="../html/newsroom.html">Mətbuat</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Yeni funksiyalar haqqında məlumat</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">CEO-larımızdan bir məktub</a>
+                                            </li>
+                                            <li>
+                                                <a href="../html/carriers.html">Kariyera</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">İnvenstrlar</a>
+                                            </li>
+                                        </ul>
+                                    </section>                  
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

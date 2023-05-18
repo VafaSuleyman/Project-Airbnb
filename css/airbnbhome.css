@@ -399,6 +399,71 @@ tbody tr td div{
     padding: 10px 17px;
 }
 
+/* MAIN AIRFRIENDLY SECTION THERE */
+
+.airfriendly_content{
+    padding: 0 80px 120px;
+}
+
+.airfriendly_content h2{
+    text-align: center;
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 36px;
+}
+
+.airfriendly_content_panel{
+    width: 62%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.airfriendly_content_panel_item{
+    width: 31.9%;
+}
+
+.airfriendly_content_panel_item img{
+    width: 100%;
+    border-radius: 12px;
+}
+
+.airfriendly_content_panel_item h5{
+    padding-top: 12px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 4px;
+}
+
+.airfriendly_content_panel_item span{
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.airfriendly_content p{
+    width: 62%;
+    margin: 36px auto;
+    text-align: center;
+    font-size: 22px;
+    line-height: 32px;
+}
+
+.airfriendly_content_more{
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.airfriendly_content_more a{
+    border-radius: 8px;
+    border: 1px solid black;
+    background: #FFFFFF;
+    padding: 10px 17px;
+}
+
 /* MAIN CHAT SECTION */
 
 .chat{

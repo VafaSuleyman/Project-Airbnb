@@ -2,12 +2,15 @@ let loginButton = document.querySelector('login_button');
 const container = document.querySelector(".main_content_otels"); 
 const liLogIn = document.getElementById("LogIn");
 const liSignIn = document.getElementById("SignIn");
+const switchButton = document.querySelector('.switch_button');
+const buttonContent = document.querySelector('.button_content');
+const navItems = document.querySelectorAll('.nav_content_category li');
 
 
-liLogIn.addEventListener("click", function() {
-  var modal = new bootstrap.Modal(document.getElementById("logModal"));
-  modal.show();
-});
+// liLogIn.addEventListener("click", function() {
+//   var modal = new bootstrap.Modal(document.getElementById("logModal"));
+//   modal.show();
+// });
 
 
 liSignIn.addEventListener("click", function() {
@@ -29,7 +32,7 @@ const hotels = [
     host: "Maria ile qonaqlayın",
     date1: "27 May",
     date2: "5 İyun",
-    price: "$ 50",
+    price: 50,
     night: "gecə"
   },
   {
@@ -45,7 +48,7 @@ const hotels = [
     host: "Ahmet ilə qonaqlayın",
     date1: "15 İyun",
     date2: "25 İyun",
-    price: "$ 80",
+    price: 80,
     night: "gecə"
   },
   {
@@ -61,7 +64,7 @@ const hotels = [
     host: "Sophie ilə qonaqlayın",
     date1: "10 İyul",
     date2: "20 İyul",
-    price: "$ 120",
+    price: 120,
     night: "gecə"
   },
   {
@@ -77,7 +80,7 @@ const hotels = [
     host: "Wayan ilə qonaqlayın",
     date1: "5 Avq",
     date2: "15 Avq",
-    price: "$ 90",
+    price: 90,
     night: "gecə"
   },
   {
@@ -93,7 +96,7 @@ const hotels = [
     host: "Sawadee ilə qonaqlayın",
     date1: "12 Sen",
     date2: "22 Sen",
-    price: "$ 70",
+     price: 70,
     night: "gecə"
   },
   {
@@ -109,7 +112,7 @@ const hotels = [
     host: "Mark ilə qonaqlayın",
     date1: "3 Noy",
     date2: "13 Noy",
-    price: "$ 150",
+     price: 150,
     night: "gecə"
   },
   {
@@ -125,7 +128,7 @@ const hotels = [
     host: "Ali ilə qonaqlayın",
     date1: "20 Dek",
     date2: "30 Dek",
-    price: "$ 200",
+     price: 200,
     night: "gecə"
   },
   {
@@ -141,7 +144,7 @@ const hotels = [
     host: "Natasha ilə qonaqlayın",
     date1: "15 Fev",
     date2: "25 Fev",
-    price: "$ 180",
+     price: 180,
     night: "gecə"
   },
   {
@@ -157,7 +160,7 @@ const hotels = [
     host: "Carlos ilə qonaqlayın",
     date1: "10 Mar",
     date2: "20 Mar",
-    price: "$ 160",
+     price: 160,
     night: "gecə"
   },
   {
@@ -173,7 +176,7 @@ const hotels = [
     host: "Kadek ilə qonaqlayın",
     date1: "5 Apr",
     date2: "15 Apr",
-    price: "$ 100",
+     price: 100,
     night: "gecə"
   },
   {
@@ -189,7 +192,7 @@ const hotels = [
     host: "Amanda ilə qonaqlayın",
     date1: "15 İyun",
     date2: "25 İyun",
-    price: "$ 120",
+     price: 120,
     night: "gecə"
   },
   {
@@ -205,7 +208,7 @@ const hotels = [
     host: "Julien ilə qonaqlayın",
     date1: "10 İyul",
     date2: "20 İyul",
-    price: "$ 200",
+     price: 200,
     night: "gecə"
   },
   {
@@ -221,7 +224,7 @@ const hotels = [
     host: "Wayan ilə qonaqlayın",
     date1: "15 Avq",
     date2: "25 Avq",
-    price: "$ 80",
+     price: 80,
     night: "gecə"
   },
   {
@@ -237,7 +240,7 @@ const hotels = [
     host: "Nikos ilə qonaqlayın",
     date1: "5 Sen",
     date2: "15 Sen",
-    price: "$ 150",
+     price: 150,
     night: "gecə"
   },
   {
@@ -253,7 +256,7 @@ const hotels = [
     host: "Pedro ilə qonaqlayın",
     date1: "20 Sen",
     date2: "30 Sen",
-    price: "$ 180",
+     price: 180,
     night: "gecə"
   },
   {
@@ -269,7 +272,7 @@ const hotels = [
     host: "Saranya ilə qonaqlayın",
     date1: "10 Ekim",
     date2: "20 Ekim",
-    price: "$ 120",
+     price: 120,
     night: "gecə"
   },
   {
@@ -285,7 +288,7 @@ const hotels = [
     host: "Emily ilə qonaqlayın",
     date1: "5 Noy",
     date2: "15 Noy",
-    price: "$ 160",
+     price: 160,
     night: "gecə"
   },
   {
@@ -301,7 +304,7 @@ const hotels = [
     host: "Jack ilə qonaqlayın",
     date1: "10 Noy",
     date2: "20 Noy",
-    price: "$ 100",
+     price: 100,
     night: "gecə"
   },
   {
@@ -317,7 +320,7 @@ const hotels = [
     host: "Ahmet ilə qonaqlayın",
     date1: "15 Noy",
     date2: "25 Noy",
-    price: "$ 120",
+     price: 120,
     night: "gecə"
   },
   {
@@ -333,7 +336,7 @@ const hotels = [
     host: "Carlos ilə qonaqlayın",
     date1: "20 Noy",
     date2: "30 Noy",
-    price: "$ 180",
+     price: 180,
     night: "gecə"
   },
   {
@@ -349,7 +352,7 @@ const hotels = [
     host: "Anna ilə qonaqlayın",
     date1: "5 Dek",
     date2: "15 Dek",
-    price: "$ 150",
+     price: 150,
     night: "gecə"
   },
   {
@@ -365,7 +368,7 @@ const hotels = [
     host: "Raul ilə qonaqlayın",
     date1: "10 Dek",
     date2: "20 Dek",
-    price: "$ 130",
+     price: 130,
     night: "gecə"
   },
   {
@@ -381,7 +384,7 @@ const hotels = [
     host: "Olivia ilə qonaqlayın",
     date1: "15 Dek",
     date2: "25 Dek",
-    price: "$ 100",
+     price: 100,
     night: "gecə"
   },
   {
@@ -397,7 +400,7 @@ const hotels = [
     host: "Yuki ilə qonaqlayın",
     date1: "20 Dek",
     date2: "30 Dek",
-    price: "$ 180",
+     price: 180,
     night: "gecə"
   },
   {
@@ -413,7 +416,7 @@ const hotels = [
     host: "Yuki ilə qonaqlayın",
     date1: "20 Dek",
     date2: "30 Dek",
-    price: "$ 180",
+     price: 180,
     night: "gecə"
   },
   {
@@ -429,7 +432,7 @@ const hotels = [
     host: "Komang ilə qonaqlayın",
     date1: "25 Dek",
     date2: "5 Yan",
-    price: "$ 120",
+     price: 120,
     night: "gecə"
   },
   {
@@ -445,7 +448,7 @@ const hotels = [
     host: "Carlos ilə qonaqlayın",
     date1: "1 Yan",
     date2: "10 Yan",
-    price: "$ 150",
+     price: 150,
     night: "gecə"
   },
   {
@@ -461,7 +464,7 @@ const hotels = [
     host: "Marta ilə qonaqlayın",
     date1: "5 Yan",
     date2: "15 Yan",
-    price: "$ 200",
+     price: 200,
     night: "gecə"
   },
   {
@@ -477,7 +480,7 @@ const hotels = [
     host: "Sophie ilə qonaqlayın",
     date1: "10 Fev",
     date2: "20 Fev",
-    price: "$ 250",
+     price: 250,
     night: "gecə"
   },
   {
@@ -493,7 +496,7 @@ const hotels = [
     host: "Nikos ilə qonaqlayın",
     date1: "15 Fev",
     date2: "25 Fev",
-    price: "$ 180",
+     price: 180,
     night: "gecə"
   },
   {
@@ -509,7 +512,7 @@ const hotels = [
     host: "Roberto ilə qonaqlayın",
     date1: "20 Fev",
     date2: "1 Mar",
-    price: "$ 120",
+     price: 120,
     night: "gecə"
   },
   {
@@ -525,7 +528,7 @@ const hotels = [
     host: "Emily ilə qonaqlayın",
     date1: "25 Fev",
     date2: "5 Mar",
-    price: "$ 100",
+     price: 100,
     night: "gecə"
   },
   {
@@ -541,7 +544,7 @@ const hotels = [
     host: "Sawadee ilə qonaqlayın",
     date1: "1 Mar",
     date2: "10 Mar",
-    price: "$ 180",
+     price: 180,
     night: "gecə"
   },
   {
@@ -557,7 +560,7 @@ const hotels = [
     host: "Antonio ilə qonaqlayın",
     date1: "5 Mar",
     date2: "15 Mar",
-    price: "$ 200",
+     price: 200,
     night: "gecə"
   },
   {
@@ -573,7 +576,7 @@ const hotels = [
     host: "David ilə qonaqlayın",
     date1: "10 Mar",
     date2: "20 Mar",
-    price: "$ 350",
+     price: 350,
     night: "gecə"
   },
   {
@@ -589,7 +592,7 @@ const hotels = [
     host: "Yuki ilə qonaqlayın",
     date1: "15 Mar",
     date2: "25 Mar",
-    price: "$ 300",
+     price: 300,
     night: "gecə"
   },
   {
@@ -605,7 +608,7 @@ const hotels = [
     host: "Maria ilə qonaqlayın",
     date1: "20 Mar",
     date2: "30 Mar",
-    price: "$ 250",
+     price: 250,
     night: "gecə"
   },
   {
@@ -621,7 +624,7 @@ const hotels = [
     host: "Wayan ilə qonaqlayın",
     date1: "25 Mar",
     date2: "5 Nis",
-    price: "$ 180",
+     price: 180,
     night: "gecə"
   },
   {
@@ -637,7 +640,7 @@ const hotels = [
     host: "Lungelo ilə qonaqlayın",
     date1: "30 Mar",
     date2: "10 Nis",
-    price: "$ 150",
+     price: 150,
     night: "gecə"
   },
   {
@@ -653,11 +656,13 @@ const hotels = [
     host: "Julien ilə qonaqlayın",
     date1: "5 Nis",
     date2: "15 Nis",
-    price: "$ 280",
+    price: 280,
     night: "gecə"
   }
 ];
-  
+
+// Otellerin divlerinin yaradılması
+
 hotels.forEach((hotel) => {
   const hotelHTML = `
     <div class="main_content_otel">
@@ -707,14 +712,126 @@ hotels.forEach((hotel) => {
       <div class="main_content_otel_info_detail">
         <div>2.313 km uzaqlıqda</div>
         <div>${hotel.date1} - ${hotel.date2}</div>
-        <div><span class="main_content_otel_info_price">${hotel.price}</span> ${hotel.night}</div>
+        <div><span class="main_content_otel_info_price">$${hotel.price}</span> ${hotel.night}</div>
       </div>
     </div>
   </div>
 `;
 
-// Oluşturulan HTML içeriğini konteynere ekleme
 container.innerHTML += hotelHTML;
 });
+
+// Nav id -lərinə görə otellərin filterlənməsi
+navItems.forEach((item) => {
+  item.addEventListener('click', function() {
+    const selectedId = item.id;
+    // const minimumRating = 4.5; 
+
+    const filteredHotels = hotels.filter((hotel) => {
+      return hotel.title === selectedId;
+    });
+    showFilteredHotels(filteredHotels); 
+  });
+});
+
+// Filterlənmiş otelləri göstərmək üçün
+const showFilteredHotels = (filteredHotels) => {
+
+  container.innerHTML = '';
+
+  filteredHotels.forEach((hotel) => {
+    const hotelHTML = `
+    <div class="main_content_otel">
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="${hotel.img1}" class="d-block w-100" alt="Image 1">
+          </div>
+          <div class="carousel-item">
+            <img src="${hotel.img2}" class="d-block w-100" alt="Image 2">
+          </div>
+          <div class="carousel-item">
+            <img src="${hotel.img3}" class="d-block w-100" alt="Image 3">
+          </div>
+          <div class="carousel-item">
+          <img src="${hotel.img4}" class="d-block w-100" alt="Image 4">
+        </div>
+        <div class="carousel-item">
+          <img src="${hotel.img5}" class="d-block w-100" alt="Image 5">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="main_content_otel_info">
+      <div class="main_content_otel_info_contry">
+        <div>${hotel.country}</div>
+
+        <div class="main_content_otel_info_contry_starts">
+          <span>&#9733</span>
+          <span>${hotel.puan}</span>
+        </div>
+      </div>
+
+      <div class="main_content_otel_info_detail">
+        <div>2.313 km uzaqlıqda</div>
+        <div>${hotel.date1} - ${hotel.date2}</div>
+        <div><span class="main_content_otel_info_price">$${hotel.price}</span> ${hotel.night}</div>
+      </div>
+    </div>
+  </div>
+`;
+
+    container.innerHTML += hotelHTML;
+  });
+};
+
+// const filterCarousel = new bootstrap.Carousel(document.getElementById('filterCarousel'), {
+//   interval: false
+// });
+
+
+// Check-ə görə qiymətlərin hesablanması
+let isClicked = false;
+
+switchButton.addEventListener('click', function() {
+  switchButton.classList.toggle('active');
+  buttonContent.classList.toggle('active');
+
+if (isClicked) {
+  hotels.forEach((hotel) => {
+    hotel.price = (hotel.price / 1.38).toFixed(2);
+  });
+} else {
+  hotels.forEach((hotel) => {
+    hotel.price = (hotel.price * 1.38).toFixed(2);
+  });
+}
+
+    updateHotelPrices();
+
+    isClicked = !isClicked;
+});
+
+function updateHotelPrices() {
+  const hotelPriceElements = document.querySelectorAll('.main_content_otel_info_price');
+
+  hotelPriceElements.forEach((element, index) => {
+    element.textContent = '$' + hotels[index].price;
+  });
+}
+
        
   
