@@ -170,7 +170,9 @@ header{
     font-weight: 500;
 }
 
-
+#hostName{
+    display: none;
+}
 
 .header_content_right_home div:hover{
     padding: 8px;

@@ -12,6 +12,8 @@
 
 ul, ol{
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 a{
@@ -43,8 +45,8 @@ header{
 }
 
 .header_content{
-    padding-left: 200px;
-    padding-right: 215px;
+    padding-left: 215px;
+    padding-right: 200px;
     justify-content: space-between;
     align-items: center;
     display: flex;
@@ -151,8 +153,8 @@ header{
 /* MAIN HOTEL SECTION CSS THERE*/
 
 .hotel_content{
-    padding-left: 200px;
-    padding-right: 215px;
+    padding-left: 215px;
+    padding-right: 200px;
 }
 
 .hotel_content_info{
@@ -217,30 +219,63 @@ header{
 .hotel_content_picture{
     margin-top: 24px;
     width: 100%;
+    height: 380px;
     display: flex;
     justify-content: space-between;
 }
 
 .hotel_content_picture_left{
-    width: 49%;
+    width: 49.85%;
+    height: 100%;
 }
 
 .hotel_content_picture img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .hotel_content_picture_right{
-    width: 49%;
+    width: 49.5%;
+    height: 100%;
     display: flex;
     justify-content: space-between;
+    align-content: space-between;
     flex-wrap: wrap;
 }
 
 .hotel_content_picture_right div{
-    width: 24.9%;
+    width: 49.5%;
+    height: 49.4%;
 }
 
 /* MAIN HOMEINFO SECTION CSS THERE */
+
+.left_description{
+    padding-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left_description_info h2{
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 8px;
+}
+
+.left_description_info li{
+    font-size: 16px;
+    color: rgb(34, 34, 34);
+    display: inline;
+    font-weight: 300;
+}
+
+.left_description img{
+    object-fit: cover;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+}
 
 .homeInfo{
     padding-left: 215px;
@@ -259,8 +294,103 @@ header{
     width: 57%;
 }
 
+.left_host{
+    padding: 32px 0;
+    border-top: 1px solid darkgray;
+}
+
+.left_host_property{
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.left_host_info{
+    margin-left: 16px;
+}
+
+.left_host_info h5{
+    margin-bottom: 4px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.left_host_info div{
+    font-size: 14px;
+    color: rgb(113, 113, 113);
+    line-height: 20px;
+}
+
+.left_info_body{
+    padding-top: 32px;
+}
+
+.left_info_body h5{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+
+.left_info_body button{
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.left_info_header svg{
+    margin-right: 12px;
+}
+
+.left_info_header div{
+    display: inline-block;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.left_info_header div a{
+    margin-left: 4px;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.glide__slides{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.glide__slide{
+    width: 33%;
+}
+
+.left_room{
+    margin-right: 8px;
+    padding: 24px;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 12px;
+}
+
+.left_rooms h2{
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 24px;
+}
+
+.left_room svg{
+    margin-bottom: 16px;
+}
+
+.left_room h5{
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
 .left_dates,
-.left_property{
+.left_property,
+.left_rooms,
+.left_info{
     padding-top: 48px;
     padding-bottom: 48px;
     border-top: 1px solid darkgray;
@@ -342,15 +472,18 @@ header{
 }
 
 .homeInfo_content_right{
-    padding-top: 48px;
+    /* padding-top: 48px; */
     width: 33%;
     position: relative;
 }
 
-.homeInfo_content_right_reserve{
+.sticky_panel{
     position: sticky;
-    bottom: 48px;
+    top: 128px;
     right: 0;
+}
+
+.homeInfo_content_right_reserve{
     border: 1px solid rgb(221, 221, 221);
     border-radius: 12px;
     padding: 24px;
@@ -404,6 +537,17 @@ header{
     font-size: 14px;
 }
 
+.right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(113, 113, 113);
+}
+
+.right svg{
+    color: rgb(34, 34, 34);
+}
+
 .right span{
     color: rgb(34, 34, 34);
     padding-left: 4px;
@@ -412,20 +556,91 @@ header{
 }
 
 .right a{
+    margin-left: 4px;
     text-decoration: underline;
-    color: rgb(113, 113, 113);
     font-weight: 600;
     font-size: 14px;
     cursor: pointer;
 }
 
-.right{
+.right_reserve_date{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    width: 100%;
+    color: #222222;
+    background: transparent;
+    text-align: left;
+    border: 1px solid darkgray;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
 }
 
-.homeInfo_content_right_reserve button{
+.right_reserve_date_first_month{
+    border-right: 1px solid darkgray;
+}
+
+.right_reserve_date_first_month,
+.right_reserve_date_end_month{
+    padding: 12px;
+    width: 50%;
+    text-align: left;
+}
+
+.right_reserve_date_first_month div:nth-child(1),
+.right_reserve_date_end_month div:nth-child(1){
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.homeInfo_content_right_reserve label{
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    text-align: left;
+    border: 1px solid darkgray;
+    border-top: none;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.homeInfo_content_right_reserve label h5{
+    font-size: 10px;
+    margin-bottom: 0;
+}
+
+.homeInfo_content_right_reserve_list div{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+}
+
+.homeInfo_content_right_reserve_list div h5{
+    font-size: 16px;
+    text-decoration: underline;
+    color: rgb(69, 67, 67);
+    font-weight: 400;
+}
+
+.homeInfo_content_right_reserve_list div:nth-child(2) span{
+    color: green;
+}
+
+.homeInfo_content_right_reserve_total{
+    border-top: 1px solid rgb(221, 221, 221);
+    margin-top: 24px;
+    padding-top: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.homeInfo_content_right_reserve_total h5{
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.reserv{
     margin-top: 16px;
     width: 100%;
     opacity: 1;
@@ -684,6 +899,10 @@ header{
     border-radius: 8px;
     border: 1px solid black;
     padding: 16px;
+}
+
+.comment_content a{
+    width: 30%;
 }
 
 .where_host_body_right_info{
